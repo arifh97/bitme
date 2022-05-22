@@ -1,0 +1,187 @@
+/*=== HEADINGA AREA CSS START ===*/
+
+.header-area {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    padding: 23px 0;
+    background-color: $primary-2;
+    @include mmd {
+        padding: 15px 0px;
+    }
+    @include ssm {
+        padding: 10px 0px;
+    }
+    & .navbar {
+        &-toggler {
+            width: 40px;
+            height: 40px;
+            filter: invert(100%) sepia(0%) saturate(1%) hue-rotate(141deg) brightness(101%) contrast(100%);
+            @include ssm {
+                width: 35px;
+                height: 35px;
+            }
+            &[aria-expanded=false] {
+                background-image: url("data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 30 30%27%3e%3cpath stroke=%27rgba%280, 0, 0, 0.55%29%27 stroke-linecap=%27round%27 stroke-miterlimit=%2710%27 stroke-width=%272%27 d=%27M4 7h22M4 15h22M4 23h22%27/%3e%3c/svg%3e");
+            }
+            &[aria-expanded=true] {
+                background-image: url("data:image/svg+xml;charset=UTF-8, %3csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='30' height='30' viewBox='0 0 30 30'%3e%3cdefs%3e%3cclipPath id='clip-path'%3e%3crect id='Rectangle_369' data-name='Rectangle 369' width='30' height='30' transform='translate(433 201)' fill='%236b7073'/%3e%3c/clipPath%3e%3c/defs%3e%3cg id='close' transform='translate(-433 -201)' clip-path='url(%23clip-path)'%3e%3cpath id='download-icon-CLOSE-131994911256789607_0' d='M8.452,38.284a.939.939,0,0,0,1.327,0l13.4-13.414,13.4,13.414A.938.938,0,0,0,37.9,36.958l-13.385-13.4L37.9,10.159a.937.937,0,0,0-1.327-1.325l-13.4,13.414L9.778,8.834a.937.937,0,0,0-1.327,1.325l13.383,13.4L8.451,36.958A.937.937,0,0,0,8.452,38.284Z' transform='translate(424.823 192.442)' fill='%23231f20'/%3e%3c/g%3e%3c/svg%3e ");
+                background-repeat: no-repeat;
+                background-size: 60%;
+                background-position: center;
+            }
+        }
+    }
+}
+
+.header-clear {
+    height: 90px;
+}
+
+.fixed-top .site-logo img {
+    max-width: 180px;
+}
+
+.navbar>.container {
+    align-items: center;
+}
+
+.fixed-top>.container {
+    align-items: center;
+}
+
+.navbar-brand,
+.navbar {
+    padding: 0;
+}
+
+.header-area .main-menu {
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    align-items: center;
+    padding-right: 186px;
+    @include ssm {
+        padding: 10px !important;
+        padding-bottom: 15px !important;
+    }
+}
+
+.hero-content-area-wrapper {
+    position: relative;
+    z-index: 9;
+}
+
+.menu-btn {
+    position: absolute;
+    right: 0;
+}
+
+.header-area .main-menu li {
+    margin-left: 40px;
+}
+
+.header-area .main-menu li a {
+    font-size: var(--font-size-five);
+    line-height: 120%;
+    color: var(--color-white);
+    transition: all 0.3s ease;
+}
+
+.header-area .main-menu li a:hover {
+    opacity: 0.5;
+}
+
+
+/**
+ * ## Humberger Menu Style
+ * --------------------------- */
+
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+    border: 0;
+}
+
+.site-logo img {
+    max-width: 119px;
+}
+
+// responsive
+@media screen and (min-width: 992px) and (max-width: 1280px) {
+    .header-area .main-menu li {
+        margin-left: calc(15px + 25 * ((100vw - 992px) / 1280));
+    }
+    .header-area .main-menu li a {
+        font-size: calc(16px + 4 * ((100vw - 992px) / 1280));
+    }
+    @keyframes jumpInfinite {
+        0% {
+            left: 30px;
+        }
+        50% {
+            left: 60px;
+        }
+        100% {
+            left: 30px;
+        }
+    }
+}
+
+@include mmd {
+    .fixed-top {
+        top: 0px;
+        transform: translateY(0px);
+    }
+    .hero-area p {
+        line-height: 1.5;
+    }
+    .header-area .main-menu li {
+        margin: 0;
+    }
+    .header-area .main-menu li a:hover:after,
+    .header-area .main-menu li.active>a:after,
+    .footer-menu li a:hover:after {
+        width: 30px;
+    }
+    .header-area .main-menu li a {
+        display: inline-block;
+    }
+    .navbar-nav {
+        text-align: center;
+    }
+    .menu-btn {
+        position: relative;
+        margin-top: 22px;
+    }
+    .header-area .main-menu {
+        align-items: start;
+        padding: 20px;
+        padding-bottom: 25px;
+        margin-top: 20px;
+    }
+    .navbar-nav {
+        text-align: center;
+        background: $darkbg;
+    }
+    .header-area .main-menu li {
+        width: 100%;
+    }
+    .header-area .main-menu li a {
+        display: block;
+        padding: 15px;
+        text-align: left;
+        border-bottom: 1px solid #ccc3;
+    }
+    .navbar-toggler {
+        padding-right: 0px;
+    }
+}
+
+
+/*=== HEADINGA AREA CSS END ===*/

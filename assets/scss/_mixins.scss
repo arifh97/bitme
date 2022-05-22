@@ -1,0 +1,93 @@
+@mixin transition {
+    transition: all .3s ease-in-out;
+}
+
+@mixin hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+@mixin show {
+    opacity: 1;
+    visibility: visible;
+}
+
+@mixin img($property) {
+    width: 100%;
+    height: 100%;
+    object-fit: $property;
+}
+
+@mixin position_middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin middle_clear {
+    position: unset;
+    top: 0%;
+    left: 0%;
+    transform: translate(0, 0);
+}
+
+@mixin position_left {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+@mixin position_right {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+@mixin primaryGradian {
+    background: rgb(29, 133, 255);
+    background: linear-gradient(70deg, rgba(29, 133, 255, 1) 0%, rgba(29, 174, 255, 1) 100%);
+}
+
+@mixin primaryGradianHover {
+    background: rgb(29, 133, 255);
+    background: linear-gradient(-70deg, rgba(29, 133, 255, 1) 0%, rgba(29, 174, 255, 1) 100%);
+}
+
+@mixin bg-gradian {
+    background: rgb(25, 51, 82);
+    background: linear-gradient(180deg, rgba(25, 51, 82, 1) 0%, rgba(25, 51, 82, 0) 100%);
+}
+
+@mixin text_ellipsis($count) {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: $count;
+    -webkit-box-orient: vertical;
+}
+
+@mixin flex {
+    display: flex;
+    align-items: center;
+}
+
+@mixin font-40 {
+    font-size: 40px;
+    line-height: 1.2;
+    @include xl {
+        font-size: 34px;
+    }
+    @include lg {
+        font-size: 32px;
+    }
+    @include md {
+        font-size: 28px;
+    }
+    @include sm {
+        font-size: 26px;
+    }
+    @include ssm {
+        font-size: 22px;
+    }
+}

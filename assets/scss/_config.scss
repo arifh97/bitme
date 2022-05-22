@@ -1,0 +1,102 @@
+.nice-select {
+    width: 100%;
+    @include bg-gradian;
+    padding: 14px 18px;
+    height: auto;
+    line-height: 1.3;
+    border: none;
+    border-radius: 10px;
+    &::after {
+        display: none;
+    }
+    & .current {
+        color: $text-color;
+        position: relative;
+        @include flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        &::before {
+            content: "\f0d7";
+            font-family: "Font Awesome 5 Pro";
+            font-weight: 900;
+            color: $text-color;
+        }
+    }
+    &.open {
+        & .current {
+            &::before {
+                content: "\f0d8";
+            }
+        }
+    }
+    & .list {
+        width: 100%;
+        background-color: $darkbg;
+        & li {
+            border-radius: 0 !important;
+            &.selected,
+            &:hover {
+                background-color: $primary-2 !important;
+            }
+        }
+    }
+}
+
+.page_navbar {
+    & .nav {
+        margin-bottom: 0px;
+        &-item {
+            --site-radius: 10px;
+            &:first-child {
+                &>* {
+                    border-top-left-radius: var(--site-radius) !important;
+                    border-bottom-left-radius: var(--site-radius) !important;
+                }
+            }
+            &:last-child {
+                &>* {
+                    border-top-right-radius: var(--site-radius) !important;
+                    border-bottom-right-radius: var(--site-radius) !important;
+                }
+            }
+            &.active {
+                &>* {
+                    @include primaryGradian;
+                }
+            }
+        }
+        &-link {
+            border-radius: 0px;
+            font-size: 16px;
+            line-height: 1.2;
+            background-color: $primary-2;
+            color: $white !important;
+            padding: 15px 32px;
+        }
+    }
+}
+
+.pagination {
+    justify-content: flex-end;
+    margin-top: 25px;
+    & ul {
+        & li {
+            & a,
+            & span {
+                display: block;
+                color: rgba($color: $white, $alpha: .70);
+                font-size: 12px;
+            }
+            & span {
+                margin: 0 10px;
+            }
+            & a {
+                padding: 10px;
+                margin: -10px;
+                &:hover {
+                    color: $primary;
+                }
+            }
+        }
+    }
+}
