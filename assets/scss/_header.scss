@@ -38,6 +38,9 @@
 
 .header-clear {
     height: 90px;
+    @include mmd {
+        height: 74px;
+    }
 }
 
 .fixed-top .site-logo img {
@@ -91,7 +94,7 @@
 }
 
 .header-area .main-menu li a:hover {
-    opacity: 0.5;
+    color: $primary;
 }
 
 

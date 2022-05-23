@@ -36,12 +36,16 @@
     position: absolute;
     top: 0;
     left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 @mixin position_right {
     position: absolute;
     top: 0;
     right: 0;
+    width: 100%;
+    height: 100%;
 }
 
 @mixin primaryGradian {
@@ -72,22 +76,26 @@
     align-items: center;
 }
 
+@mixin font-25 {
+    font-size: 26px;
+}
+
 @mixin font-40 {
     font-size: 40px;
     line-height: 1.2;
     @include xl {
-        font-size: 34px;
+        font-size: 36px;
     }
     @include lg {
-        font-size: 32px;
+        font-size: 34px;
     }
     @include md {
-        font-size: 28px;
+        font-size: 30px;
     }
     @include sm {
-        font-size: 26px;
+        font-size: 28px;
     }
     @include ssm {
-        font-size: 22px;
+        font-size: 24px;
     }
 }

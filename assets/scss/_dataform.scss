@@ -6,6 +6,10 @@
     border-radius: 30px;
     position: relative;
     z-index: 1;
+    @include sm {
+        padding: 20px;
+        border-radius: 20px;
+    }
     &::before {
         content: "";
         width: 100%;
@@ -16,28 +20,48 @@
         background-position: right center;
         background-repeat: no-repeat;
         background-size: cover;
+        z-index: -1;
+    }
+    &::after {
+        @include position_left;
+        background-color: rgba($color: $darkbg, $alpha: .50);
+        z-index: -1;
+        @include sm {
+            content: ""
+        }
     }
     & h3 {
         @include font-40;
         margin-bottom: 15px;
+        @include sm {
+            margin-bottom: 10px;
+        }
     }
     & p {
         margin-bottom: 20px;
+        @include sm {
+            font-size: 14px;
+        }
     }
 }
 
 .datainfo {
     &_header {
-        margin-bottom: 30px;
+        margin-bottom: 15px;
+        @include mmd {
+            margin-bottom: 10px;
+        }
         &_left {
             display: flex;
             flex-wrap: wrap;
-            --sp: 10px;
-            margin-left: calc(var(--sp) * -1);
-            margin-right: calc(var(--sp) * -1);
+            gap: 20px;
+            @include mmd {
+                margin-bottom: 20px;
+            }
+            @include ssm {
+                gap: 15px;
+            }
             &>div {
-                padding-left: var(--sp);
-                padding-right: var(--sp);
                 max-width: 100%;
                 flex: 1;
             }
@@ -46,6 +70,12 @@
             @include flex;
             justify-content: flex-end;
             gap: 30px;
+            @include mmd {
+                justify-content: space-between;
+            }
+            @include ssm {
+                gap: 15px;
+            }
             &>.custom_border {
                 &::before {
                     width: 101%;
@@ -64,6 +94,9 @@
                         color: $text-color;
                         border-radius: 100px;
                         padding: 6px 15px;
+                        @include ssm {
+                            padding: 5px 10px;
+                        }
                         &.active {
                             @include primaryGradian;
                             color: $white;
@@ -79,6 +112,9 @@
                 & li {
                     &:not(:first-child) {
                         margin-left: 10px;
+                        @include ssm {
+                            margin-left: 5px;
+                        }
                     }
                     &.custom_border {
                         &::before {
@@ -98,12 +134,30 @@
                         display: block;
                         padding: 12px;
                         border-radius: 10px;
+                        @include sm {
+                            padding: 10px;
+                        }
+                        @include ssm {
+                            padding: 5px 8px;
+                        }
+                        & svg {
+                            @include ssm {
+                                width: 18px;
+                                height: 18px;
+                            }
+                        }
                     }
                 }
             }
         }
     }
     &-table {
+        &-responsive {
+            @include sm {
+                overflow-y: hidden;
+                overflow-x: scroll;
+            }
+        }
         & .custom_border {
             &>* {
                 border-radius: 0;
@@ -111,24 +165,48 @@
             &::before {
                 width: 101%;
                 margin-left: -5px;
+                @include sm {
+                    width: 102%;
+                }
+            }
+        }
+        & .d-flex {
+            &>div {
+                max-width: 100%;
+                flex: 0 0 auto;
             }
         }
         & .user {
             &_img {
-                --user-img: 36px;
-                height: var(--user-img);
-                width: var(--user-img);
-                border-radius: 100%;
-                overflow: hidden;
-                & img {
-                    @include img(cover);
+                &_inner {
+                    display: inline-block;
+                    --user-img: 36px;
+                    --user-img-sp: 18px;
+                    height: var(--user-img);
+                    width: var(--user-img);
+                    border-radius: 100%;
+                    overflow: hidden;
+                    &:not(:first-child) {
+                        position: relative;
+                        right: var(--user-img-sp);
+                        margin-right: calc(var(--user-img-sp) * -1);
+                    }
+                    & img {
+                        @include img(cover);
+                    }
                 }
             }
             &_content {
+                padding-left: 15px;
+                @include sm {
+                    padding-left: 10px;
+                }
                 & p {
                     @include text_ellipsis(1);
-                    padding-left: 15px;
                     font-size: 16px;
+                    @include sm {
+                        font-size: 14px;
+                    }
                 }
             }
         }
@@ -136,9 +214,16 @@
             width: 100%;
             border-collapse: separate;
             border-spacing: 0px 15px;
+            @include sm {
+                width: 700px !important;
+                border-spacing: 0px 10px;
+            }
             & tr {
                 & td {
                     padding: 15px 20px;
+                    @include sm {
+                        padding: 10px 15px !important;
+                    }
                     &:first-child {
                         border-top-left-radius: 10px;
                         border-bottom-left-radius: 10px;
@@ -169,9 +254,19 @@
                         margin-bottom: 5px;
                         color: rgba($color: $white, $alpha: .70);
                     }
+                    &>a {
+                        font-size: 13px;
+                        color: $primary !important;
+                        &:hover {
+                            opacity: .8;
+                        }
+                    }
                     &>p {
                         font-size: 16px;
                         color: $white;
+                        @include sm {
+                            font-size: 14px;
+                        }
                     }
                     & .dropdown {
                         &>span {
@@ -197,7 +292,7 @@
             }
         }
         & .pagination {
-            margin-top: 0px;
+            margin-top: 5px;
         }
     }
 }

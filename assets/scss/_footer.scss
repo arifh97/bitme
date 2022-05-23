@@ -4,8 +4,21 @@
  * ---------------------------------------------------------------------------------------------------- */
 
 .footer-area {
-    padding-top: 166px;
+    padding-top: 85px;
+    padding-bottom: 66px;
     background-color: $primary-2;
+    @include lg {
+        padding-top: 65px;
+        padding-bottom: 46px;
+    }
+    @include md {
+        padding-top: 55px;
+        padding-bottom: 36px;
+    }
+    @include sm {
+        padding-top: 55px;
+        padding-bottom: 36px;
+    }
 }
 
 .footer-widget h4 {

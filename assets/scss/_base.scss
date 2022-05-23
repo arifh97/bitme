@@ -124,6 +124,9 @@ input[type=number] {
     background-color: $primary-2;
     font-weight: 600;
     padding: 15px 30px;
+    @include sm {
+        padding: 12px 20px;
+    }
     &:hover {
         @include primaryGradian;
         & span {
@@ -174,18 +177,47 @@ input[type=number] {
     height: 100%;
 }
 
-.section_padding {
-    padding-top: 30px;
+.section_padding_bottom {
     padding-bottom: 80px;
     @include sm {
         padding-bottom: 50px;
+    }
+    @include ssm {
+        padding-bottom: 35px;
     }
 }
 
 .min_padding {
     margin: 30px 0px;
+    @include mmd {
+        margin: 25px 0px;
+    }
     @include ssm {
         margin: 20px 0px;
+    }
+}
+
+.min_padding_top {
+    margin-top: 30px;
+    @include mmd {
+        margin-top: 25px;
+    }
+    @include ssm {
+        margin-top: 20px;
+    }
+}
+
+.section_title {
+    margin-bottom: 30px;
+    @include mmd {
+        margin-bottom: 20px
+    }
+    @include ssm {
+        margin-bottom: 15px
+    }
+    & h2 {
+        @include font-25;
+        margin-bottom: 0px;
     }
 }
 
@@ -211,7 +243,6 @@ input[type=number] {
 }
 
 .checkbox {
-    transition: all .5s ease;
     & label {
         @include flex;
         cursor: pointer;
@@ -221,8 +252,8 @@ input[type=number] {
         &:checked~label .checkbox_icon {
             @include primaryGradian;
             &::before {
-                left: auto;
-                right: 3px;
+                left: 100%;
+                margin-left: calc(100% - 45px);
             }
         }
     }
@@ -233,7 +264,6 @@ input[type=number] {
         background-color: $primary-2;
         position: relative;
         border-radius: 100px;
-        transition: all .5s ease;
         &::before {
             content: "";
             width: 12px;
@@ -244,7 +274,7 @@ input[type=number] {
             top: 50%;
             left: 3px;
             transform: translateY(-50%);
-            transition: all .5s ease;
+            @include transition;
         }
     }
     &_title {
@@ -283,9 +313,6 @@ input[type=number] {
         border-radius: 10px;
         &::placeholder {
             color: $text-color;
-        }
-        &:focus {
-            border-color: $primary-2;
         }
     }
 }
