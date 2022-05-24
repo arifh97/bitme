@@ -294,19 +294,32 @@ input[type=number] {
   }
 }
 
-@media only screen and (max-width: 479px) {
-  .section_title {
-    margin-bottom: 15px;
+.section_title h2 {
+  font-size: 25px;
+  margin-bottom: 0px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .section_title h2 {
+    font-size: 22px;
   }
 }
 
-.section_title h2 {
-  font-size: 26px;
-  margin-bottom: 0px;
+@media only screen and (max-width: 767px) {
+  .section_title h2 {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 479px) {
+  .section_title h2 {
+    font-size: 18px;
+  }
 }
 
 .custom_border {
   position: relative;
+  z-index: 1;
 }
 
 .custom_border > * {
@@ -436,6 +449,14 @@ input[type=number] {
   color: #ECF1F6;
 }
 
+.text-green {
+  color: #48C81B !important;
+}
+
+.text-red {
+  color: #DD2F2F !important;
+}
+
 .nice-select {
   width: 100%;
   background: #193352;
@@ -538,6 +559,71 @@ input[type=number] {
   }
 }
 
+@media only screen and (max-width: 479px) {
+  .page_navbar_list {
+    overflow: scroll;
+  }
+}
+
+.page_navbar_list .nav {
+  margin-bottom: 0;
+  border-bottom: 1px solid #0c233e;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  --link-px: 15px;
+  margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 479px) {
+  .page_navbar_list .nav {
+    overflow: hidden;
+    --link-px: 12px;
+  }
+}
+
+.page_navbar_list .nav ul {
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+}
+
+.page_navbar_list .nav-item {
+  margin-right: 10px;
+}
+
+.page_navbar_list .nav-item:last-child {
+  margin-right: 0;
+}
+
+.page_navbar_list .nav-item:last-child > * {
+  padding-right: 0px;
+}
+
+.page_navbar_list .nav-item:last-child .active {
+  padding-right: var(--link-px);
+}
+
+.page_navbar_list .nav-link {
+  display: block;
+  font-size: 13px;
+  line-height: 1.2;
+  padding: 8px var(--link-px);
+  padding-top: 0px;
+  background-color: transparent !important;
+  color: rgba(255, 255, 255, 0.74);
+  border: none;
+  border-bottom: 1px solid transparent !important;
+}
+
+.page_navbar_list .nav-link:hover {
+  color: #00CBFF;
+}
+
+.page_navbar_list .nav-link.active {
+  border-color: #00CBFF !important;
+  color: white !important;
+}
+
 .pagination {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
@@ -563,14 +649,6 @@ input[type=number] {
 
 .pagination ul li a:hover {
   color: #00CBFF;
-}
-
-.text-green {
-  color: #48C81B !important;
-}
-
-.text-red {
-  color: #DD2F2F !important;
 }
 
 /*=== HEADINGA AREA CSS START ===*/
@@ -1065,14 +1143,19 @@ input[type=number] {
 }
 
 .datainfo-table .custom_border::before {
-  width: 101%;
-  margin-left: -5px;
+  width: 100.8%;
+  margin-left: -3px;
+  height: 103%;
 }
 
 @media only screen and (max-width: 767px) {
   .datainfo-table .custom_border::before {
-    width: 102%;
+    width: 101%;
   }
+}
+
+.datainfo-table .d-flex {
+  line-height: 1;
 }
 
 .datainfo-table .d-flex > div {
@@ -1090,6 +1173,12 @@ input[type=number] {
   width: var(--user-img);
   border-radius: 100%;
   overflow: hidden;
+}
+
+@media only screen and (max-width: 767px) {
+  .datainfo-table .user_img_inner {
+    --user-img: 30px;
+  }
 }
 
 .datainfo-table .user_img_inner:not(:first-child) {
@@ -1185,6 +1274,10 @@ input[type=number] {
   color: #00CBFF !important;
 }
 
+.datainfo-table table tr td > a i {
+  margin-left: 5px;
+}
+
 .datainfo-table table tr td > a:hover {
   opacity: .8;
 }
@@ -1238,11 +1331,38 @@ input[type=number] {
   }
 }
 
+@media only screen and (max-width: 479px) {
+  .page_card {
+    padding: 15px;
+  }
+}
+
+.page_card .datainfo-table table {
+  border-spacing: 0px 10px;
+}
+
+@media only screen and (max-width: 767px) {
+  .page_card .datainfo-table table {
+    width: 930px !important;
+  }
+}
+
 .page_card .datainfo-table table tr th {
   padding: 15px 20px;
   background-color: #0c233e;
   font-size: 10px;
   color: rgba(255, 255, 255, 0.7);
+  border-bottom: 5px solid #091B31;
+}
+
+.page_card .datainfo-table table tr th[data-width-fix] {
+  width: 24%;
+}
+
+@media only screen and (max-width: 767px) {
+  .page_card .datainfo-table table tr th[data-width-fix] {
+    width: 25%;
+  }
 }
 
 @media only screen and (max-width: 767px) {
@@ -1278,6 +1398,21 @@ input[type=number] {
 .page_card .datainfo-table table tr td p > i {
   font-size: 12px;
   margin-left: 5px;
+}
+
+/*== transactions area start ==*/
+@media only screen and (max-width: 767px) {
+  .transactions .datainfo-table table {
+    width: 750px !important;
+  }
+}
+
+.transactions .datainfo-table .custom_border::before {
+  height: 105%;
+}
+
+.transactions .pagination {
+  margin-top: 10px;
 }
 
 /**

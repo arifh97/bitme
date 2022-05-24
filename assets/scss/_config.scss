@@ -1,3 +1,11 @@
+.text-green {
+    color: $green-800 !important;
+}
+
+.text-red {
+    color: $red-800 !important;
+}
+
 .nice-select {
     width: 100%;
     @include bg-gradian;
@@ -80,6 +88,56 @@
             }
         }
     }
+    &_list {
+        @include ssm {
+            overflow: scroll;
+        }
+        & .nav {
+            margin-bottom: 0;
+            border-bottom: 1px solid $darkbg;
+            width: max-content;
+            --link-px: 15px;
+            margin-bottom: 10px;
+            @include ssm {
+                overflow: hidden;
+                --link-px: 12px;
+            }
+            & ul {
+                border-bottom-left-radius: 100px;
+                border-bottom-right-radius: 100px;
+            }
+            &-item {
+                margin-right: 10px;
+                &:last-child {
+                    margin-right: 0;
+                    &>* {
+                        padding-right: 0px;
+                    }
+                    & .active {
+                        padding-right: var(--link-px);
+                    }
+                }
+            }
+            &-link {
+                display: block;
+                font-size: 13px;
+                line-height: 1.2;
+                padding: 8px var(--link-px);
+                padding-top: 0px;
+                background-color: transparent !important;
+                color: rgba($color: $white, $alpha: .74);
+                border: none;
+                border-bottom: 1px solid transparent !important;
+                &:hover {
+                    color: $primary;
+                }
+                &.active {
+                    border-color: $primary !important;
+                    color: $white !important;
+                }
+            }
+        }
+    }
 }
 
 .pagination {
@@ -105,12 +163,4 @@
             }
         }
     }
-}
-
-.text-green {
-    color: $green-800 !important;
-}
-
-.text-red {
-    color: $red-800 !important;
 }

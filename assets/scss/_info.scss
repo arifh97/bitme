@@ -7,14 +7,28 @@
     @include sm {
         padding: 20px;
     }
+    @include ssm {
+        padding: 15px;
+    }
     & .datainfo-table {
         & table {
+            border-spacing: 0px 10px;
+            @include sm {
+                width: 930px !important;
+            }
             & tr {
                 & th {
                     padding: 15px 20px;
                     background-color: $darkbg;
                     font-size: 10px;
                     color: rgba($color: $white, $alpha: .70);
+                    border-bottom: 5px solid $primary-2;
+                    &[data-width-fix] {
+                        width: 24%;
+                        @include sm {
+                            width: 25%;
+                        }
+                    }
                     @include sm {
                         padding: 10px 15px !important;
                     }
@@ -44,5 +58,24 @@
                 }
             }
         }
+    }
+}
+
+
+/*== transactions area start ==*/
+
+.transactions {
+    & .datainfo-table {
+        & table {
+            @include sm {
+                width: 750px !important;
+            }
+        }
+        & .custom_border::before {
+            height: 105%;
+        }
+    }
+    & .pagination {
+        margin-top: 10px;
     }
 }

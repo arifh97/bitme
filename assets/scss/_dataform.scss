@@ -163,14 +163,16 @@
                 border-radius: 0;
             }
             &::before {
-                width: 101%;
-                margin-left: -5px;
+                width: 100.8%;
+                margin-left: -3px;
+                height: 103%;
                 @include sm {
-                    width: 102%;
+                    width: 101%;
                 }
             }
         }
         & .d-flex {
+            line-height: 1;
             &>div {
                 max-width: 100%;
                 flex: 0 0 auto;
@@ -186,6 +188,9 @@
                     width: var(--user-img);
                     border-radius: 100%;
                     overflow: hidden;
+                    @include sm {
+                        --user-img: 30px;
+                    }
                     &:not(:first-child) {
                         position: relative;
                         right: var(--user-img-sp);
@@ -257,6 +262,9 @@
                     &>a {
                         font-size: 13px;
                         color: $primary !important;
+                        & i {
+                            margin-left: 5px;
+                        }
                         &:hover {
                             opacity: .8;
                         }

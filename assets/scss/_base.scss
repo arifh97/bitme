@@ -212,9 +212,6 @@ input[type=number] {
     @include mmd {
         margin-bottom: 20px
     }
-    @include ssm {
-        margin-bottom: 15px
-    }
     & h2 {
         @include font-25;
         margin-bottom: 0px;
@@ -223,6 +220,7 @@ input[type=number] {
 
 .custom_border {
     position: relative;
+    z-index: 1;
     &>* {
         background-color: $darkbg-2;
         border-radius: 10px;

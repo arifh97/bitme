@@ -53,7 +53,7 @@
     <div class="header-clear"></div>
     <!-- Header End-->
 
-    <!-- Analytics arae start -->
+    <!-- Analytics areae start -->
     <section class="min_padding_top analytics">
         <div class="container">
             <div class="row">
@@ -77,7 +77,7 @@
             </div>
         </div>
     </section>
-    <!-- Analytics arae end -->
+    <!-- Analytics areae end -->
 
     <!-- top token area start -->
     <section class="min_padding_top top_tokens">
@@ -98,7 +98,7 @@
                                     <tr>
                                         <th class="p-0 m-0"></th>
                                         <th class="text-uppercase">#</th>
-                                        <th class="text-uppercase">Name</th>
+                                        <th class="text-uppercase" data-width-fix="true">Name</th>
                                         <th class="text-uppercase">price</th>
                                         <th class="text-uppercase">Price Change</th>
                                         <th class="text-uppercase">Volume 24H</th>
@@ -114,7 +114,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="user_content ">
-                                                    <p>Cake - BNB</p>
+                                                    <p>Warpped BNB (WBNB)</p>
                                                 </div>
                                             </div>
                                         </td>
@@ -141,7 +141,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="user_content ">
-                                                    <p>Cake - BNB</p>
+                                                    <p>Warpped BNB (WBNB)</p>
                                                 </div>
                                             </div>
                                         </td>
@@ -168,7 +168,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="user_content ">
-                                                    <p>Cake - BNB</p>
+                                                    <p>Warpped BNB (WBNB)</p>
                                                 </div>
                                             </div>
                                         </td>
@@ -202,7 +202,7 @@
     </section>
     <!-- top token area end -->
 
-    <!-- top pools ara start -->
+    <!-- top pools area start -->
     <section class="min_padding_top top_pools">
         <div class="container">
             <div class="row">
@@ -212,7 +212,6 @@
                     </div>
                 </div>
             </div>
-
             <div class="row">
                 <div class="col-md-12">
                     <div class="page_card">
@@ -222,7 +221,7 @@
                                     <tr>
                                         <th class="p-0 m-0"></th>
                                         <th class="text-uppercase">#</th>
-                                        <th class="text-uppercase">Pool</th>
+                                        <th class="text-uppercase" data-width-fix="true">Pool</th>
                                         <th class="text-uppercase">Volume 24H</th>
                                         <th class="text-uppercase">Volume 7D</th>
                                         <th class="text-uppercase">Lp Reward Fees 24H</th>
@@ -250,7 +249,7 @@
                                             <p>$54.42M</p>
                                         </td>
                                         <td>
-                                            <p>$410.43M<i class="fal fa-arrow-up"></i></p>
+                                            <p>$410.43M</p>
                                         </td>
                                         <td>
                                             <p>$93.53K</p>
@@ -283,7 +282,7 @@
                                             <p>$54.42M</p>
                                         </td>
                                         <td>
-                                            <p>$410.43M<i class="fal fa-arrow-up"></i></p>
+                                            <p>$410.43M</p>
                                         </td>
                                         <td>
                                             <p>$93.53K</p>
@@ -316,7 +315,7 @@
                                             <p>$54.42M</p>
                                         </td>
                                         <td>
-                                            <p>$410.43M<i class="fal fa-arrow-up"></i></p>
+                                            <p>$410.43M</p>
                                         </td>
                                         <td>
                                             <p>$93.53K</p>
@@ -343,8 +342,397 @@
             </div>
         </div>
     </section>
-    <!-- top pools ara end -->
+    <!-- top pools area end -->
 
+    <!-- transactions area start -->
+    <section class="min_padding_top section_padding_bottom transactions">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section_title">
+                        <h2>Transactions</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="page_card">
+                        <div class="page_navbar_list">
+                            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active" id="all-tab" data-bs-toggle="tab" data-bs-target="#all" type="button" role="tab" aria-controls="all" aria-selected="true">All</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="swaps-tab" data-bs-toggle="tab" data-bs-target="#swaps" type="button" role="tab" aria-controls="swaps" aria-selected="true">Swaps</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="adds-tab" data-bs-toggle="tab" data-bs-target="#adds" type="button" role="tab" aria-controls="adds" aria-selected="true">Adds</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="removes-tab" data-bs-toggle="tab" data-bs-target="#removes" type="button" role="tab" aria-controls="removes" aria-selected="true">Removes</button>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="all-tab">
+                                <div class="datainfo-table ">
+                                    <div class="datainfo-table-responsive">
+                                        <table>
+                                            <tr>
+                                                <th class="p-0 m-0"></th>
+                                                <th class="text-uppercase">#</th>
+                                                <th class="text-uppercase">Action</th>
+                                                <th class="text-uppercase">Total Value</th>
+                                                <th class="text-uppercase">Token Amount</th>
+                                                <th class="text-uppercase">Token Amount</th>
+                                                <th class="text-uppercase">Account</th>
+                                                <th class="text-uppercase">Time</th>
+                                            </tr>
+                                            <tr class="custom_border ">
+                                                <td><span>1</span></td>
+                                                <td>
+                                                    <a href="#" target="_blank">Swap Lina for BUSD <i class="far fa-external-link-alt"></i></a>
+                                                </td>
+                                                <td>
+                                                    <p>$1.02K</p>
+                                                </td>
+                                                <td>
+                                                    <p>110.29K LINA</p>
+                                                </td>
+                                                <td>
+                                                    <p>1.02K BUSD</p>
+                                                </td>
+                                                <td>
+                                                    <a href="#" target="_blank">0x79..7f38 <i class="far fa-external-link-alt"></i></a>
+                                                </td>
+                                                <td>
+                                                    <p>35 Minutes</p>
+                                                </td>
+                                            </tr>
+                                            <tr class="custom_border ">
+                                                <td><span>1</span></td>
+                                                <td>
+                                                    <a href="#" target="_blank">Swap Lina for BUSD <i class="far fa-external-link-alt"></i></a>
+                                                </td>
+                                                <td>
+                                                    <p>$1.02K</p>
+                                                </td>
+                                                <td>
+                                                    <p>110.29K LINA</p>
+                                                </td>
+                                                <td>
+                                                    <p>1.02K BUSD</p>
+                                                </td>
+                                                <td>
+                                                    <a href="#" target="_blank">0x79..7f38 <i class="far fa-external-link-alt"></i></a>
+                                                </td>
+                                                <td>
+                                                    <p>35 Minutes</p>
+                                                </td>
+                                            </tr>
+                                            <tr class="custom_border ">
+                                                <td><span>1</span></td>
+                                                <td>
+                                                    <a href="#" target="_blank">Swap Lina for BUSD <i class="far fa-external-link-alt"></i></a>
+                                                </td>
+                                                <td>
+                                                    <p>$1.02K</p>
+                                                </td>
+                                                <td>
+                                                    <p>110.29K LINA</p>
+                                                </td>
+                                                <td>
+                                                    <p>1.02K BUSD</p>
+                                                </td>
+                                                <td>
+                                                    <a href="#" target="_blank">0x79..7f38 <i class="far fa-external-link-alt"></i></a>
+                                                </td>
+                                                <td>
+                                                    <p>35 Minutes</p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <nav class="pagination ">
+                                        <ul>
+                                            <li><a href="# "><i class="fal fa-arrow-left "></i></a></li>
+                                            <li><span>Page 1 of 1</span></li>
+                                            <li><a href="# "><i class="fal fa-arrow-right "></i></a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="swaps" role="tabpanel" aria-labelledby="swaps-tab">
+                                <div class="datainfo-table ">
+                                    <div class="datainfo-table-responsive">
+                                        <table>
+                                            <tr>
+                                                <th class="p-0 m-0"></th>
+                                                <th class="text-uppercase">#</th>
+                                                <th class="text-uppercase">Action</th>
+                                                <th class="text-uppercase">Total Value</th>
+                                                <th class="text-uppercase">Token Amount</th>
+                                                <th class="text-uppercase">Token Amount</th>
+                                                <th class="text-uppercase">Account</th>
+                                                <th class="text-uppercase">Time</th>
+                                            </tr>
+                                            <tr class="custom_border ">
+                                                <td><span>1</span></td>
+                                                <td>
+                                                    <a href="#" target="_blank">Swap Lina for BUSD <i class="far fa-external-link-alt"></i></a>
+                                                </td>
+                                                <td>
+                                                    <p>$1.02K</p>
+                                                </td>
+                                                <td>
+                                                    <p>110.29K LINA</p>
+                                                </td>
+                                                <td>
+                                                    <p>1.02K BUSD</p>
+                                                </td>
+                                                <td>
+                                                    <a href="#" target="_blank">0x79..7f38 <i class="far fa-external-link-alt"></i></a>
+                                                </td>
+                                                <td>
+                                                    <p>35 Minutes</p>
+                                                </td>
+                                            </tr>
+                                            <tr class="custom_border ">
+                                                <td><span>1</span></td>
+                                                <td>
+                                                    <a href="#" target="_blank">Swap Lina for BUSD <i class="far fa-external-link-alt"></i></a>
+                                                </td>
+                                                <td>
+                                                    <p>$1.02K</p>
+                                                </td>
+                                                <td>
+                                                    <p>110.29K LINA</p>
+                                                </td>
+                                                <td>
+                                                    <p>1.02K BUSD</p>
+                                                </td>
+                                                <td>
+                                                    <a href="#" target="_blank">0x79..7f38 <i class="far fa-external-link-alt"></i></a>
+                                                </td>
+                                                <td>
+                                                    <p>35 Minutes</p>
+                                                </td>
+                                            </tr>
+                                            <tr class="custom_border ">
+                                                <td><span>1</span></td>
+                                                <td>
+                                                    <a href="#" target="_blank">Swap Lina for BUSD <i class="far fa-external-link-alt"></i></a>
+                                                </td>
+                                                <td>
+                                                    <p>$1.02K</p>
+                                                </td>
+                                                <td>
+                                                    <p>110.29K LINA</p>
+                                                </td>
+                                                <td>
+                                                    <p>1.02K BUSD</p>
+                                                </td>
+                                                <td>
+                                                    <a href="#" target="_blank">0x79..7f38 <i class="far fa-external-link-alt"></i></a>
+                                                </td>
+                                                <td>
+                                                    <p>35 Minutes</p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <nav class="pagination ">
+                                        <ul>
+                                            <li><a href="# "><i class="fal fa-arrow-left "></i></a></li>
+                                            <li><span>Page 1 of 1</span></li>
+                                            <li><a href="# "><i class="fal fa-arrow-right "></i></a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="adds" role="tabpanel" aria-labelledby="adds-tab">
+                                <div class="datainfo-table ">
+                                    <div class="datainfo-table-responsive">
+                                        <table>
+                                            <tr>
+                                                <th class="p-0 m-0"></th>
+                                                <th class="text-uppercase">#</th>
+                                                <th class="text-uppercase">Action</th>
+                                                <th class="text-uppercase">Total Value</th>
+                                                <th class="text-uppercase">Token Amount</th>
+                                                <th class="text-uppercase">Token Amount</th>
+                                                <th class="text-uppercase">Account</th>
+                                                <th class="text-uppercase">Time</th>
+                                            </tr>
+                                            <tr class="custom_border ">
+                                                <td><span>1</span></td>
+                                                <td>
+                                                    <a href="#" target="_blank">Swap Lina for BUSD <i class="far fa-external-link-alt"></i></a>
+                                                </td>
+                                                <td>
+                                                    <p>$1.02K</p>
+                                                </td>
+                                                <td>
+                                                    <p>110.29K LINA</p>
+                                                </td>
+                                                <td>
+                                                    <p>1.02K BUSD</p>
+                                                </td>
+                                                <td>
+                                                    <a href="#" target="_blank">0x79..7f38 <i class="far fa-external-link-alt"></i></a>
+                                                </td>
+                                                <td>
+                                                    <p>35 Minutes</p>
+                                                </td>
+                                            </tr>
+                                            <tr class="custom_border ">
+                                                <td><span>1</span></td>
+                                                <td>
+                                                    <a href="#" target="_blank">Swap Lina for BUSD <i class="far fa-external-link-alt"></i></a>
+                                                </td>
+                                                <td>
+                                                    <p>$1.02K</p>
+                                                </td>
+                                                <td>
+                                                    <p>110.29K LINA</p>
+                                                </td>
+                                                <td>
+                                                    <p>1.02K BUSD</p>
+                                                </td>
+                                                <td>
+                                                    <a href="#" target="_blank">0x79..7f38 <i class="far fa-external-link-alt"></i></a>
+                                                </td>
+                                                <td>
+                                                    <p>35 Minutes</p>
+                                                </td>
+                                            </tr>
+                                            <tr class="custom_border ">
+                                                <td><span>1</span></td>
+                                                <td>
+                                                    <a href="#" target="_blank">Swap Lina for BUSD <i class="far fa-external-link-alt"></i></a>
+                                                </td>
+                                                <td>
+                                                    <p>$1.02K</p>
+                                                </td>
+                                                <td>
+                                                    <p>110.29K LINA</p>
+                                                </td>
+                                                <td>
+                                                    <p>1.02K BUSD</p>
+                                                </td>
+                                                <td>
+                                                    <a href="#" target="_blank">0x79..7f38 <i class="far fa-external-link-alt"></i></a>
+                                                </td>
+                                                <td>
+                                                    <p>35 Minutes</p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <nav class="pagination ">
+                                        <ul>
+                                            <li><a href="# "><i class="fal fa-arrow-left "></i></a></li>
+                                            <li><span>Page 1 of 1</span></li>
+                                            <li><a href="# "><i class="fal fa-arrow-right "></i></a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="removes" role="tabpanel" aria-labelledby="removes-tab">
+                                <div class="datainfo-table ">
+                                    <div class="datainfo-table-responsive">
+                                        <table>
+                                            <tr>
+                                                <th class="p-0 m-0"></th>
+                                                <th class="text-uppercase">#</th>
+                                                <th class="text-uppercase">Action</th>
+                                                <th class="text-uppercase">Total Value</th>
+                                                <th class="text-uppercase">Token Amount</th>
+                                                <th class="text-uppercase">Token Amount</th>
+                                                <th class="text-uppercase">Account</th>
+                                                <th class="text-uppercase">Time</th>
+                                            </tr>
+                                            <tr class="custom_border ">
+                                                <td><span>1</span></td>
+                                                <td>
+                                                    <a href="#" target="_blank">Swap Lina for BUSD <i class="far fa-external-link-alt"></i></a>
+                                                </td>
+                                                <td>
+                                                    <p>$1.02K</p>
+                                                </td>
+                                                <td>
+                                                    <p>110.29K LINA</p>
+                                                </td>
+                                                <td>
+                                                    <p>1.02K BUSD</p>
+                                                </td>
+                                                <td>
+                                                    <a href="#" target="_blank">0x79..7f38 <i class="far fa-external-link-alt"></i></a>
+                                                </td>
+                                                <td>
+                                                    <p>35 Minutes</p>
+                                                </td>
+                                            </tr>
+                                            <tr class="custom_border ">
+                                                <td><span>1</span></td>
+                                                <td>
+                                                    <a href="#" target="_blank">Swap Lina for BUSD <i class="far fa-external-link-alt"></i></a>
+                                                </td>
+                                                <td>
+                                                    <p>$1.02K</p>
+                                                </td>
+                                                <td>
+                                                    <p>110.29K LINA</p>
+                                                </td>
+                                                <td>
+                                                    <p>1.02K BUSD</p>
+                                                </td>
+                                                <td>
+                                                    <a href="#" target="_blank">0x79..7f38 <i class="far fa-external-link-alt"></i></a>
+                                                </td>
+                                                <td>
+                                                    <p>35 Minutes</p>
+                                                </td>
+                                            </tr>
+                                            <tr class="custom_border ">
+                                                <td><span>1</span></td>
+                                                <td>
+                                                    <a href="#" target="_blank">Swap Lina for BUSD <i class="far fa-external-link-alt"></i></a>
+                                                </td>
+                                                <td>
+                                                    <p>$1.02K</p>
+                                                </td>
+                                                <td>
+                                                    <p>110.29K LINA</p>
+                                                </td>
+                                                <td>
+                                                    <p>1.02K BUSD</p>
+                                                </td>
+                                                <td>
+                                                    <a href="#" target="_blank">0x79..7f38 <i class="far fa-external-link-alt"></i></a>
+                                                </td>
+                                                <td>
+                                                    <p>35 Minutes</p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <nav class="pagination ">
+                                        <ul>
+                                            <li><a href="# "><i class="fal fa-arrow-left "></i></a></li>
+                                            <li><span>Page 1 of 1</span></li>
+                                            <li><a href="# "><i class="fal fa-arrow-right "></i></a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- transactions area end -->
 
     <!--Footer Start-->
     <footer class="footer-area ">
