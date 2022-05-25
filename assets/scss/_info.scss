@@ -4,11 +4,10 @@
     background-color: $primary-2;
     padding: 30px;
     border-radius: 20px;
+    margin-bottom: 30px;
     @include sm {
         padding: 20px;
-    }
-    @include ssm {
-        padding: 15px;
+        margin-bottom: 20px;
     }
     & .datainfo-table {
         & table {
@@ -56,6 +55,12 @@
                         }
                     }
                 }
+            }
+        }
+        &-datashape {
+            margin: 10px;
+            @include mmd {
+                margin: 0px;
             }
         }
     }

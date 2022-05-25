@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="assets/img/bitme-favicon.png" type="image" />
+
+    <title>Bitme</title>
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css" />
+    <link rel="stylesheet" href="assets/css/nice-select.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+    <!-- Header Start -->
+    <header class="header-area">
+        <nav id="navbar_top" class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand site-logo" href="index.html">
+                    <img src="assets/img/bitme-site-logo.png" alt="site-logo" />
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav main-menu pt-4 pt-lg-0 mb-2 mb-lg-0">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Trade</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#roadmap">NFT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Earn</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Win</a>
+                        </li>
+
+                        <div class="menu-btn">
+                            <a href="#" class="boxed-btn">Connect wallet</a>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="header-clear"></div>
+    <!-- Header End-->
+    <main class="min_padding_top section_padding_bottom swap">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="page_navbar">
+                        <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="pills-swap-tab" data-bs-toggle="pill" data-bs-target="#pills-swap" type="button" role="tab" aria-controls="pills-swap" aria-selected="true">
+                                    Swap
+                                </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-limit-tab" data-bs-toggle="pill" data-bs-target="#pills-limit" type="button" role="tab" aria-controls="pills-limit" aria-selected="true">
+                                    Limit
+                                </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-liquidity-tab" data-bs-toggle="pill" data-bs-target="#pills-liquidity" type="button" role="tab" aria-controls="pills-liquidity" aria-selected="true">
+                                    Liquidity
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="tab-conten min_padding_top" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-swap" role="tabpanel" aria-labelledby="pills-swap-tab">
+                            <div class="row">
+                                <div class="col-xl-8 col-lg-7 col-md-6">
+                                    <div class="page_card"></div>
+                                </div>
+                                <div class="col-xl-4 col-lg-5 col-md-6">
+                                    <div class="page_card h-100">
+                                        <div class="swap_card">
+                                            <div class="swap_card_header">
+                                                <div>
+                                                    <h4>Swap</h4>
+                                                    <p>Trade Tokens in an Instant</p>
+                                                </div>
+                                                <div>
+                                                    <ul>
+                                                        <li>
+                                                            <a href="#">
+                                                                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path
+                                                                        d="M8.90713 15H6.09334C5.91704 15 5.74603 14.9416 5.60866 14.8344C5.47129 14.7271 5.37583 14.5776 5.3381 14.4105L5.02348 12.9975C4.60378 12.8191 4.20581 12.596 3.8369 12.3323L2.41686 12.771C2.24878 12.823 2.06742 12.8177 1.9029 12.7559C1.73837 12.6941 1.60059 12.5795 1.51243 12.4313L0.102441 10.068C0.0152025 9.9196 -0.0175448 9.74687 0.00955717 9.57806C0.0366591 9.40926 0.122006 9.25437 0.251634 9.13875L1.35319 8.16375C1.30309 7.72208 1.30309 7.27642 1.35319 6.83475L0.251634 5.862C0.121822 5.74633 0.0363595 5.59131 0.00925307 5.42234C-0.0178533 5.25337 0.0150046 5.08048 0.102441 4.932L1.50934 2.56725C1.5975 2.41899 1.73528 2.30444 1.8998 2.24264C2.06433 2.18084 2.24569 2.1755 2.41377 2.2275L3.83381 2.66625C4.02242 2.53125 4.21877 2.40525 4.4213 2.29125C4.61687 2.18475 4.81786 2.088 5.02348 2.00175L5.33888 0.59025C5.37642 0.423148 5.4717 0.273516 5.60893 0.166162C5.74615 0.0588074 5.91707 0.000179974 6.09334 0H8.90713C9.08341 0.000179974 9.25433 0.0588074 9.39155 0.166162C9.52877 0.273516 9.62405 0.423148 9.6616 0.59025L9.98008 2.0025C10.3993 2.18195 10.7971 2.40501 11.1667 2.66775L12.5875 2.229C12.7555 2.17719 12.9366 2.18263 13.101 2.24442C13.2654 2.30621 13.403 2.42065 13.4911 2.56875L14.898 4.9335C15.0774 5.23875 15.0155 5.625 14.7488 5.86275L13.6473 6.83775C13.6974 7.27942 13.6974 7.72508 13.6473 8.16675L14.7488 9.14175C15.0155 9.38025 15.0774 9.76575 14.898 10.071L13.4911 12.4357C13.403 12.584 13.2652 12.6986 13.1007 12.7604C12.9361 12.8222 12.7548 12.8275 12.5867 12.7755L11.1667 12.3368C10.798 12.6003 10.4003 12.8231 9.98086 13.0012L9.6616 14.4105C9.6239 14.5775 9.52855 14.7269 9.39134 14.8341C9.25414 14.9413 9.0833 14.9999 8.90713 15ZM7.49715 4.5C6.67708 4.5 5.89059 4.81607 5.31072 5.37868C4.73084 5.94129 4.40507 6.70435 4.40507 7.5C4.40507 8.29565 4.73084 9.05871 5.31072 9.62132C5.89059 10.1839 6.67708 10.5 7.49715 10.5C8.31722 10.5 9.1037 10.1839 9.68357 9.62132C10.2635 9.05871 10.5892 8.29565 10.5892 7.5C10.5892 6.70435 10.2635 5.94129 9.68357 5.37868C9.1037 4.81607 8.31722 4.5 7.49715 4.5Z"
+                                                                        fill="white" />
+                                                                </svg>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path
+                                                                        d="M6.91056 0.0232032C8.4248 -0.0961724 9.93959 0.247038 11.2545 1.00742C12.5694 1.7678 13.6225 2.90951 14.2743 4.28147C14.9261 5.65343 15.146 7.19098 14.9049 8.69065C14.6637 10.1903 13.9729 11.5814 12.9239 12.6799C11.8748 13.7784 10.517 14.5324 9.02996 14.8423C7.54297 15.1521 5.99694 15.0032 4.59645 14.4152C3.19596 13.8271 2.00702 12.8277 1.18697 11.5492C0.366916 10.2706 -0.0456019 8.7732 0.00400179 7.25507C0.00947188 7.06859 0.0887968 6.89192 0.224526 6.76393C0.360256 6.63594 0.541271 6.5671 0.727751 6.57257C0.914232 6.57804 1.0909 6.65737 1.21889 6.7931C1.34689 6.92883 1.41572 7.10984 1.41025 7.29632C1.36274 8.73338 1.82491 10.1409 2.71503 11.2701C3.60515 12.3993 4.86588 13.1774 6.2743 13.4667C7.68272 13.7561 9.1481 13.5381 10.4113 12.8514C11.6745 12.1646 12.6542 11.0533 13.1771 9.71388C13.7001 8.3745 13.7325 6.89336 13.2688 5.53235C12.8051 4.17135 11.875 3.01815 10.6431 2.27668C9.41121 1.53521 7.9568 1.25323 6.53705 1.4806C5.1173 1.70797 3.82369 2.43004 2.88494 3.51914L2.69369 3.75258H4.45337L4.549 3.75914C4.718 3.78153 4.87311 3.86457 4.98546 3.99279C5.09782 4.12101 5.15975 4.28569 5.15975 4.45617C5.15975 4.62665 5.09782 4.79132 4.98546 4.91955C4.87311 5.04777 4.718 5.1308 4.549 5.1532L4.45337 5.15882H1.174L1.07838 5.1532C0.926222 5.13228 0.785103 5.06211 0.676586 4.95343C0.568069 4.84474 0.498124 4.70351 0.477439 4.55133L0.470877 4.4557V0.705703L0.477439 0.611015C0.498124 0.458829 0.568069 0.317601 0.676586 0.208914C0.785103 0.100228 0.926222 0.0300625 1.07838 0.00914061L1.174 0.00351557L1.26963 0.00914061C1.42178 0.0300625 1.5629 0.100228 1.67142 0.208914C1.77993 0.317601 1.84988 0.458829 1.87056 0.611015L1.87713 0.705703L1.87619 2.53664C3.16311 1.07537 4.96922 0.173665 6.91056 0.0232032ZM7.26494 3.75258L7.36056 3.75914C7.51272 3.78006 7.65383 3.85023 7.76235 3.95891C7.87087 4.0676 7.94081 4.20883 7.9615 4.36101L7.96806 4.4557V7.49976L9.60868 7.5007L9.70431 7.50726C9.8726 7.53042 10.0268 7.61372 10.1385 7.74177C10.2501 7.86981 10.3116 8.03395 10.3116 8.20382C10.3116 8.3737 10.2501 8.53784 10.1385 8.66588C10.0268 8.79393 9.8726 8.87723 9.70431 8.90039L9.60868 8.90695H7.26494L7.16931 8.90039C7.01729 8.87951 6.87628 8.80948 6.76778 8.70098C6.65928 8.59248 6.58925 8.45146 6.56837 8.29945L6.56181 8.20289V4.4557L6.56837 4.36101C6.58906 4.20883 6.659 4.0676 6.76752 3.95891C6.87604 3.85023 7.01716 3.78006 7.16931 3.75914L7.26494 3.75351V3.75258Z"
+                                                                        fill="white" />
+                                                                </svg>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path
+                                                                        d="M14.4596 2.09464L13.471 2.88214C12.1231 1.12679 10.0267 0 7.67266 0C3.60784 0 0.317765 3.34821 0.312506 7.49107C0.307248 11.6375 3.60433 15 7.67266 15C10.8505 15 13.5587 12.9464 14.5893 10.0696C14.6156 9.99464 14.5771 9.91071 14.5035 9.88571L13.5096 9.5375C13.4749 9.5254 13.437 9.52759 13.4039 9.54361C13.3709 9.55963 13.3452 9.5882 13.3326 9.62321C13.301 9.7125 13.266 9.80179 13.2291 9.88929C12.9259 10.6214 12.4912 11.2786 11.9373 11.8429C11.3879 12.4036 10.7374 12.8511 10.0215 13.1607C9.28001 13.4804 8.48948 13.6429 7.67616 13.6429C6.86109 13.6429 6.07232 13.4804 5.33087 13.1607C4.61427 12.8524 3.96352 12.4048 3.41502 11.8429C2.86411 11.2832 2.42534 10.6197 2.12318 9.88929C1.80943 9.13214 1.64992 8.32857 1.64992 7.49821C1.64992 6.66786 1.80943 5.86429 2.12318 5.10714C2.42642 4.375 2.86113 3.71786 3.41502 3.15357C3.96892 2.58929 4.61396 2.14643 5.33087 1.83571C6.07232 1.51607 6.86285 1.35357 7.67616 1.35357C8.49123 1.35357 9.28001 1.51607 10.0215 1.83571C10.7381 2.14401 11.3888 2.59164 11.9373 3.15357C12.1108 3.33036 12.2738 3.51786 12.4246 3.71429L11.3694 4.55357C11.3485 4.57003 11.3326 4.59215 11.3235 4.6174C11.3144 4.64265 11.3125 4.66999 11.318 4.6963C11.3235 4.7226 11.3362 4.74679 11.3546 4.76608C11.373 4.78537 11.3963 4.79899 11.422 4.80536L14.4999 5.57321C14.5876 5.59464 14.6735 5.52679 14.6735 5.43571L14.6875 2.20536C14.6857 2.0875 14.5508 2.02143 14.4596 2.09464Z"
+                                                                        fill="white" />
+                                                                </svg>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="swap_card_body">
+                                                <div class="swap_card_body_exchange">
+                                                    <div class="swap_card_item">
+                                                        <div class="d-flex align-items-center justify-content-between">
+                                                            <div class="custom_border d-flex align-items-center">
+                                                                <div class="swap_card_item_dropdown" data-areacontrols="false">
+                                                                    <div class="current d-flex align-items-center">
+                                                                        <span id="img"><img
+                                                                                src="assets/img/data-info/1.png"
+                                                                                alt="" /></span>
+                                                                        <span>BNB</span>
+                                                                        <i class="far fa-angle-down"></i>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="swap_item_rate">0.0</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="swap_card_item_exchange text-center">
+                                                        <div id="icon">
+                                                            <i class="fa fa-exchange-alt fa-rotate-90"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="swap_card_item">
+                                                        <div class="d-flex align-items-center justify-content-between">
+                                                            <div class="custom_border d-flex align-items-center">
+                                                                <div class="swap_card_item_dropdown" data-areiacontrol="false">
+                                                                    <div class="current d-flex align-items-center">
+                                                                        <span id="img"><img
+                                                                                src="assets/img/data-info/1.png"
+                                                                                alt="" /></span>
+                                                                        <span>BNB</span>
+                                                                        <i class="far fa-angle-down"></i>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="swap_card_item_rate">0.0</div>
+                                                        </div>
+                                                    </div>
+                                                    <p class="d-flex align-items-center justify-content-between">Slippage Tolerance <span>0.5%</span></p>
+                                                </div>
+                                                <a href="#" class="boxed-btn w-100 text-center">Connect Wallet</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-limit" role="tabpanel" aria-labelledby="pills-limit-tab">
+                            b
+                        </div>
+                        <div class="tab-pane fade" id="pills-liquidity" role="tabpanel" aria-labelledby="pills-liquidity-tab">
+                            c
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!--Footer Start-->
+    <footer class="footer-area">
+        <div class="container">
+            <div class="row footer-top">
+                <div class="col-md-12 col-lg-3 text-md-center text-lg-start mb-4 mb-lg-0">
+                    <a href="# " class="site-logo">
+                        <img src="assets/img/bitme-site-logo.png " alt="site-logo " />
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-3 col-lg-2 mt-4 mt-md-0">
+                    <div class="footer-widget">
+                        <h4>About</h4>
+                        <ul>
+                            <li><a href="# ">Contact</a></li>
+                            <li><a href="# ">Brand</a></li>
+                            <li><a href="# ">Blog</a></li>
+                            <li><a href="# ">Community</a></li>
+                            <li><a href="# ">Online Store</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3 col-lg-2 mt-4 mt-md-0">
+                    <div class="footer-widget">
+                        <h4>HELP</h4>
+                        <ul>
+                            <li><a href="# ">Customer Support</a></li>
+                            <li><a href="# ">Trobleshooting</a></li>
+                            <li><a href="# ">Guides</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3 col-lg-2 mt-4 mt-md-0">
+                    <div class="footer-widget">
+                        <h4>DEVELOPERS</h4>
+                        <ul>
+                            <li><a href="# ">Github</a></li>
+                            <li><a href="# ">Documentation</a></li>
+                            <li><a href="# ">Bug Bounty</a></li>
+                            <li><a href="# ">Audit</a></li>
+                            <li><a href="# ">Careers</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3 col-lg-2 mt-4 mt-md-0">
+                    <div class="footer-widget">
+                        <h4>social media</h4>
+                        <ul>
+                            <li><a href="# ">Facebook</a></li>
+                            <li><a href="# ">Twitter</a></li>
+                            <li><a href="# ">Instagram</a></li>
+                            <li><a href="# ">Telegram</a></li>
+                            <li><a href="# ">Linkedin</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row footer-bottom justify-content-center align-items-center">
+                <img src="assets/img/Line-border.png " alt="bitme-line-border " />
+                <div class="col-md-6 col-lg-6 mt-4 mt-md-0 py-4 text-center">
+                    <p>
+                        Copyright &copy; Bitme
+                        <script>
+                            document.write(new Date().getFullYear());
+                        </script>
+                        | All rights reserved
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--Footer End-->
+
+    <script src="assets/js/jquery.min.js "></script>
+    <script src="assets/js/bootstrap.min.js "></script>
+    <script src="assets/js/jquery.nice-select.min.js "></script>
+    <script src="assets/js/popper.min.js "></script>
+    <script src="assets/js/main.js "></script>
+</body>
+
+</html>

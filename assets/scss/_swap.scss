@@ -2,6 +2,7 @@
 
 .swap {
     &_card {
+        --action-icon: 35px;
         &_header {
             @include flex;
             justify-content: space-between;
@@ -19,7 +20,6 @@
                 & li {
                     display: inline-block;
                     & a {
-                        --action-icon: 35px;
                         @include flex;
                         justify-content: center;
                         width: var(--action-icon);
@@ -27,6 +27,9 @@
                         border-radius: 100%;
                         text-align: center !important;
                         background-color: $darkbg;
+                        &:hover {
+                            background-color: $primary;
+                        }
                         & svg {
                             & path {
                                 fill: $white;
@@ -41,6 +44,191 @@
             border: 1px solid rgba($color: $primary, $alpha: .10);
             padding: 12px;
             border-radius: 10px;
+            & .custom_border {
+                &::before {
+                    width: 101%;
+                    height: 105%;
+                }
+            }
+            &_dropdown {
+                padding: 5px 10px;
+                & .current {
+                    cursor: pointer;
+                    &>* {
+                        display: inline-block;
+                    }
+                    & #img {
+                        --swap-ex-icon: 15px;
+                        width: var(--swap-ex-icon);
+                        height: var(--swap-ex-icon);
+                        line-height: var(--swap-ex-icon);
+                        overflow: hidden;
+                        margin-right: 5px;
+                        & img {
+                            @include img(cover);
+                        }
+                    }
+                    & span {
+                        text-transform: uppercase;
+                        font-size: 13px;
+                    }
+                    & i {
+                        margin-left: 5px;
+                        font-size: 10px;
+                    }
+                }
+            }
+            &_rate {
+                font-size: 13px;
+                color: $white;
+            }
+            &_exchange {
+                position: relative;
+                z-index: 1;
+                &::before {
+                    content: "";
+                    background-image: url(../img/exchange-bg.png);
+                    background-size: 100%;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    width: 100%;
+                    height: 100%;
+                    z-index: -1;
+                    @include position_middle;
+                }
+                & #icon {
+                    width: var(--action-icon);
+                    height: var(--action-icon);
+                    line-height: var(--action-icon);
+                    border-radius: 100%;
+                    overflow: hidden;
+                    margin: 10px auto;
+                    background-color: $darkbg;
+                    font-size: 14px;
+                    color: $primary;
+                    cursor: pointer;
+                    & img {
+                        @include img(cover);
+                    }
+                }
+            }
         }
+        & .boxed_btn {
+            margin-top: 50px;
+            @include lg {
+                margin-top: 40px;
+            }
+            @include md {
+                margin-top: 30px;
+            }
+            @include sm {
+                margin-top: 25px;
+            }
+        }
+        &_body {
+            & a {
+                margin-top: 50px;
+                @include lg {
+                    margin-top: 40px;
+                }
+                @include md {
+                    margin-top: 30px;
+                }
+                @include sm {
+                    margin-top: 25px;
+                }
+            }
+            &_exchange {
+                & p {
+                    font-size: 13px;
+                    margin-top: 15px;
+                    & span {
+                        font-weight: 600;
+                        color: $primary;
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/*== Limit CSS ==*/
+
+.limit {
+    & .input-control {
+        margin-top: 20px;
+        &-label {
+            font-size: 13px;
+            & #reload {
+                display: inline-block;
+                background-color: $darkbg;
+                border-radius: 100px;
+                line-height: 1.5;
+                font-size: 10px;
+                padding: 4px 10px;
+                color: $white;
+                border: none;
+                &:hover {
+                    background-color: $primary;
+                }
+            }
+            & i {
+                margin-right: 5px;
+            }
+        }
+        &-input {
+            border-color: rgba($color: $primary, $alpha: .10);
+        }
+    }
+    & .datainfo-table {
+        & .custom_border {
+            &::before {
+                width: 101%;
+            }
+        }
+    }
+    & .page_card {
+        & .datainfo-table table {
+            @include sm {
+                width: 100% !important;
+            }
+        }
+    }
+}
+
+
+/*== Liquidity CSS ==*/
+
+.liquidity {
+    &_content {
+        padding: 0px 20%;
+        margin-top: 50px;
+        @include lg {
+            margin-top: 40px;
+        }
+        @include md {
+            margin-top: 30px;
+        }
+        @include sm {
+            margin-top: 25px;
+        }
+        & p {
+            font-weight: 500;
+            line-height: 160%;
+            @include ssm {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+.swap>.row,
+.limit>.row,
+.liquidity>.row {
+    margin-bottom: -30px;
+    @include sm {
+        margin-bottom: -20px;
     }
 }
