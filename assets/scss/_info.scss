@@ -5,8 +5,13 @@
     padding: 30px;
     border-radius: 20px;
     margin-bottom: 30px;
-    @include sm {
+    @include lg {
         padding: 20px;
+    }
+    @include mmd {
+        padding: 20px;
+    }
+    @include sm {
         margin-bottom: 20px;
     }
     & .datainfo-table {
@@ -82,5 +87,135 @@
     }
     & .pagination {
         margin-top: 10px;
+    }
+}
+
+
+/*=== CHARTJS AREA CSS ===*/
+
+.chart {
+    &_title {
+        margin-bottom: 25px;
+        @include mmd {
+            margin-bottom: 15px
+        }
+        & h4 {
+            @include font-20;
+            font-weight: 500;
+            margin-bottom: 8px;
+        }
+        & p {
+            font-size: 13px;
+            color: rgba($color: $white, $alpha: .70);
+            font-weight: 400;
+            & strong {
+                color: $white;
+                @include font-25;
+                font-weight: 700;
+            }
+        }
+        &_top {
+            @include flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            @include mmd {
+                flex-wrap: wrap;
+                row-gap: 15px;
+            }
+            & .d-flex {
+                &:not(:last-child) {
+                    gap: 10px;
+                }
+                &:last-child {
+                    @include ssm {
+                        width: 100%;
+                        justify-content: space-between;
+                    }
+                }
+                &>* {
+                    max-width: 100%;
+                    flex: 0 0 auto;
+                }
+            }
+            & #img {
+                --chart-title-img: 30px;
+                width: var(--chart-title-img);
+                height: var(--chart-title-img);
+                line-height: var(--chart-title-img);
+                border-radius: 100%;
+                overflow: hidden;
+                & img {
+                    @include img(cover);
+                }
+            }
+            & p {
+                font-size: 16px;
+                color: $white;
+                margin-right: 15px;
+                @include lg {
+                    margin-right: 0px;
+                }
+            }
+            & span {
+                color: $primary;
+                & #icon {
+                    --icon: 30px;
+                    width: var(--icon);
+                    height: var(--icon);
+                    line-height: var(--icon);
+                    border-radius: 100%;
+                    font-size: 14px;
+                    text-align: center;
+                    margin-right: 10px;
+                    display: inline-block;
+                    background-color: rgba($color: $primary, $alpha: .10)
+                }
+            }
+            & ul {
+                @include flex;
+                background-color: $darkbg;
+                border-radius: 100px;
+                padding: 5px;
+                & li {
+                    & a {
+                        display: block;
+                        color: $white;
+                        padding: 5px 10px;
+                        line-height: 1.3;
+                        border-radius: 100px;
+                        text-transform: uppercase;
+                        @include mmd {
+                            padding: 5px 15px;
+                        }
+                        @include sm {
+                            font-size: 14px;
+                        }
+                        &.active,
+                        &:hover {
+                            @include primaryGradian;
+                        }
+                    }
+                }
+            }
+            & .fullscreen {
+                margin-left: 20px;
+                padding: 10px 10px;
+                cursor: pointer;
+                @include lg {
+                    margin-left: 10px;
+                }
+                &:hover {
+                    & path {
+                        fill: $primary
+                    }
+                }
+                & svg {
+                    & path {
+                        fill: $white;
+                        @include transition;
+                    }
+                }
+            }
+        }
     }
 }

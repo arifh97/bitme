@@ -658,6 +658,10 @@ input[type=number] {
   }
 }
 
+.apexcharts-text tspan {
+  fill: white;
+}
+
 /*=== HEADINGA AREA CSS START ===*/
 .header-area {
   position: fixed;
@@ -1226,6 +1230,11 @@ input[type=number] {
   }
 }
 
+.datainfo-table .user_content span {
+  margin-top: 5px;
+  margin-bottom: 0px;
+}
+
 .datainfo-table table {
   width: 100%;
   border-collapse: separate;
@@ -1333,9 +1342,20 @@ input[type=number] {
   margin-bottom: 30px;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
   .page_card {
     padding: 20px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .page_card {
+    padding: 20px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .page_card {
     margin-bottom: 20px;
   }
 }
@@ -1426,6 +1446,211 @@ input[type=number] {
 
 .transactions .pagination {
   margin-top: 10px;
+}
+
+/*=== CHARTJS AREA CSS ===*/
+.chart_title {
+  margin-bottom: 25px;
+}
+
+@media only screen and (max-width: 991px) {
+  .chart_title {
+    margin-bottom: 15px;
+  }
+}
+
+.chart_title h4 {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+@media only screen and (max-width: 767px) {
+  .chart_title h4 {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 479px) {
+  .chart_title h4 {
+    font-size: 16px;
+  }
+}
+
+.chart_title p {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 400;
+}
+
+.chart_title p strong {
+  color: white;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .chart_title p strong {
+    font-size: 22px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .chart_title p strong {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 479px) {
+  .chart_title p strong {
+    font-size: 18px;
+  }
+}
+
+.chart_title_top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 991px) {
+  .chart_title_top {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    row-gap: 15px;
+  }
+}
+
+.chart_title_top .d-flex:not(:last-child) {
+  gap: 10px;
+}
+
+@media only screen and (max-width: 479px) {
+  .chart_title_top .d-flex:last-child {
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+.chart_title_top .d-flex > * {
+  max-width: 100%;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+}
+
+.chart_title_top #img {
+  --chart-title-img: 30px;
+  width: var(--chart-title-img);
+  height: var(--chart-title-img);
+  line-height: var(--chart-title-img);
+  border-radius: 100%;
+  overflow: hidden;
+}
+
+.chart_title_top #img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.chart_title_top p {
+  font-size: 16px;
+  color: white;
+  margin-right: 15px;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .chart_title_top p {
+    margin-right: 0px;
+  }
+}
+
+.chart_title_top span {
+  color: #00CBFF;
+}
+
+.chart_title_top span #icon {
+  --icon: 30px;
+  width: var(--icon);
+  height: var(--icon);
+  line-height: var(--icon);
+  border-radius: 100%;
+  font-size: 14px;
+  text-align: center;
+  margin-right: 10px;
+  display: inline-block;
+  background-color: rgba(0, 203, 255, 0.1);
+}
+
+.chart_title_top ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #0c233e;
+  border-radius: 100px;
+  padding: 5px;
+}
+
+.chart_title_top ul li a {
+  display: block;
+  color: white;
+  padding: 5px 10px;
+  line-height: 1.3;
+  border-radius: 100px;
+  text-transform: uppercase;
+}
+
+@media only screen and (max-width: 991px) {
+  .chart_title_top ul li a {
+    padding: 5px 15px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .chart_title_top ul li a {
+    font-size: 14px;
+  }
+}
+
+.chart_title_top ul li a.active, .chart_title_top ul li a:hover {
+  background: #1d85ff;
+  background: linear-gradient(70deg, #1d85ff 0%, #1daeff 100%);
+}
+
+.chart_title_top .fullscreen {
+  margin-left: 20px;
+  padding: 10px 10px;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .chart_title_top .fullscreen {
+    margin-left: 10px;
+  }
+}
+
+.chart_title_top .fullscreen:hover path {
+  fill: #00CBFF;
+}
+
+.chart_title_top .fullscreen svg path {
+  fill: white;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
 }
 
 /*== SWAP PAGE CSS ==*/
