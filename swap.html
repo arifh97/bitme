@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/img/bitme-favicon.png" type="image" />
+
+    <title>Bitme</title>
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/css/nice-select.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- Header Start -->
+    <header class="header-area">
+        <nav id="navbar_top" class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand site-logo" href="index.html">
+                    <img src="assets/img/bitme-site-logo.png" alt="site-logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav main-menu pt-4 pt-lg-0 mb-2 mb-lg-0">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Trade</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#roadmap">NFT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Earn</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Win</a>
+                        </li>
+
+                        <div class="menu-btn">
+                            <a href="#" class="boxed-btn">Connect wallet</a>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="header-clear"></div>
+    <!-- Header End-->
+    <main class="min_padding_top section_padding_bottom ">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="page_navbar">
+                        <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Farms</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Pools</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                            <div class="farms">
+                                <div class="min_padding banner_info">
+                                    <div class="banner_info_inner">
+                                        <h3>Farms</h3>
+                                        <p>Stake LP Tokens to Earn.</p>
+                                        <a href="#" class="boxed_btn">
+                                            <span>Community Auctions<i class="fal fa-arrow-right"></i></span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="datainfo">
+                                    <div class="datainfo_header row align-items-end">
+                                        <div class="col-lg-5">
+                                            <div class="datainfo_header_left">
+                                                <div>
+                                                    <div class="input-control">
+                                                        <label for="#" class="input-control-label">Sort By</label>
+                                                        <select name="" id="">
+                                                            <option value="1">Hot</option>
+                                                            <option value="2">Hot</option>
+                                                            <option value="3">Cool</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div class="input-control">
+                                                        <label for="#" class="input-control-label">Search</label>
+                                                        <label for="query" class="input-control-icon"><i class="fal fa-search"></i></label>
+                                                        <input type="search" name="query" id="query" placeholder="Search" class="input-control-input">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-7 text-end">
+                                            <div class="datainfo_header_right">
+                                                <div class="checkbox">
+                                                    <input type="checkbox" name="checkbox" id="checkbox">
+                                                    <label for="checkbox">
+                                                        <span class="checkbox_icon "></span>
+                                                        <span class="checkbox_title ">Stack Only</span>
+                                                    </label>
+                                                </div>
+                                                <div class="custom_border ">
+                                                    <ul class="related ">
+                                                        <li class="d-inline-block "><a href="# " class="active ">Live</a></li>
+                                                        <li class="d-inline-block "><a href="# ">Finished</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="view_option ">
+                                                    <ul>
+                                                        <li class="d-inline-block custom_border active ">
+                                                            <a href="# ">
+                                                                <svg width="22 " height="22 " viewBox="0 0 22 22 " fill="none " xmlns="http://www.w3.org/2000/svg ">
+                                                                    <path d="M15.3309 0V5.82595H22V0H15.3309ZM15.3309 6.97562V13.9512H22V6.97562H15.3309ZM15.3309 15.0244V22H22V15.0244H15.3309ZM6.74564 22V15.0244H0V22H6.74564ZM6.74564 13.9512V6.97562H0V13.9512H6.74564ZM6.745645.82595V0H0V5.82595H6.74564ZM7.8188 0V5.82595H14.1812V0H7.8188ZM7.8188 6.97562V13.9512H14.1812V6.97562H7.8188ZM7.8188 15.0244V22H14.1812V15.0244H7.8188Z " fill="white "/>
+                                                                </svg>
+                                                            </a>
+                                                        </li>
+                                                        <li class="d-inline-block custom_border ">
+                                                            <a href="# ">
+                                                                <svg width="22 " height="22 " viewBox="0 0 22 22 " fill="none " xmlns="http://www.w3.org/2000/svg ">
+                                                                    <path d="M6.73772 22V15.0398H0.0292969V22H6.73772ZM6.73772 13.8658V6.90564H0.0292969V13.8658H6.73772ZM6.73772 5.81539V0.0292664H0.0292969V5.81539H6.73772ZM7.82786 0.0292664V5.81539H22V0.0292664H7.82786ZM7.827866.9057V13.8659H22V6.9057H7.82786ZM7.82786 15.0398V22H22V15.0398H7.82786Z " fill="white "/>
+                                                                </svg>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="datainfo-table ">
+                                        <div class="datainfo-table-responsive">
+                                            <table>
+                                                <tbody>
+                                                    <tr class="custom_border ">
+                                                        <td>
+                                                            <div class="d-flex align-items-center ">
+                                                                <div class="user_img ">
+                                                                    <div class="user_img_inner">
+                                                                        <img src="assets/img/data-info/1.png " alt=" ">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="user_content ">
+                                                                    <p>Cake - BNB</p>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <span>Core</span>
+                                                            <div class="checkbox ">
+                                                                <input type='checkbox' name="checkbox " id="checkbox ">
+                                                                <label for="checkbox ">
+                                                                <span class="checkbox_icon "></span>
+                                                            </label>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <span>Earned</span>
+                                                            <p>10</p>
+                                                        </td>
+                                                        <td>
+                                                            <span>APR</span>
+                                                            <p>32.05%</p>
+                                                        </td>
+                                                        <td>
+                                                            <span>Liquidity</span>
+                                                            <p>$269,312.319</p>
+                                                        </td>
+                                                        <td>
+                                                            <span>Multiplier</span>
+                                                            <p>50x</p>
+                                                        </td>
+                                                        <td class="text-center ">
+                                                            <div class="dropdown ">
+                                                                <span class="dropdown_icon "><i class="fa fa-caret-down "></i></span>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="custom_border ">
+                                                        <td>
+                                                            <div class="d-flex align-items-center ">
+                                                                <div class="user_img ">
+                                                                    <div class="user_img_inner">
+                                                                        <img src="assets/img/data-info/1.png " alt=" ">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="user_content ">
+                                                                    <p>Cake - BNB</p>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <span>Core</span>
+                                                            <div class="checkbox ">
+                                                                <input type='checkbox' name="checkbox " id="checkbox1 ">
+                                                                <label for="checkbox1 ">
+                                                                <span class="checkbox_icon "></span>
+                                                            </label>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <span>Earned</span>
+                                                            <p>10</p>
+                                                        </td>
+                                                        <td>
+                                                            <span>APR</span>
+                                                            <p>32.05%</p>
+                                                        </td>
+                                                        <td>
+                                                            <span>Liquidity</span>
+                                                            <p>$269,312.319</p>
+                                                        </td>
+                                                        <td>
+                                                            <span>Multiplier</span>
+                                                            <p>50x</p>
+                                                        </td>
+                                                        <td class="text-center ">
+                                                            <div class="dropdown ">
+                                                                <span class="dropdown_icon "><i class="fa fa-caret-down "></i></span>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="custom_border ">
+                                                        <td>
+                                                            <div class="d-flex align-items-center ">
+                                                                <div class="user_img ">
+                                                                    <div class="user_img_inner">
+                                                                        <img src="assets/img/data-info/1.png " alt=" ">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="user_content ">
+                                                                    <p>Cake - BNB</p>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <span>Core</span>
+                                                            <div class="checkbox ">
+                                                                <input type='checkbox' name="checkbox " id="checkbox2 ">
+                                                                <label for="checkbox2 ">
+                                                                <span class="checkbox_icon "></span>
+                                                            </label>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <span>Earned</span>
+                                                            <p>10</p>
+                                                        </td>
+                                                        <td>
+                                                            <span>APR</span>
+                                                            <p>32.05%</p>
+                                                        </td>
+                                                        <td>
+                                                            <span>Liquidity</span>
+                                                            <p>$269,312.319</p>
+                                                        </td>
+                                                        <td>
+                                                            <span>Multiplier</span>
+                                                            <p>50x</p>
+                                                        </td>
+                                                        <td class="text-center ">
+                                                            <div class="dropdown ">
+                                                                <span class="dropdown_icon "><i class="fa fa-caret-down "></i></span>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="custom_border ">
+                                                        <td>
+                                                            <div class="d-flex align-items-center ">
+                                                                <div class="user_img ">
+                                                                    <div class="user_img_inner">
+                                                                        <img src="assets/img/data-info/1.png " alt=" ">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="user_content ">
+                                                                    <p>Cake - BNB</p>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <span>Core</span>
+                                                            <div class="checkbox ">
+                                                                <input type='checkbox' name="checkbox " id="checkbox3 ">
+                                                                <label for="checkbox3 ">
+                                                                <span class="checkbox_icon "></span>
+                                                            </label>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <span>Earned</span>
+                                                            <p>10</p>
+                                                        </td>
+                                                        <td>
+                                                            <span>APR</span>
+                                                            <p>32.05%</p>
+                                                        </td>
+                                                        <td>
+                                                            <span>Liquidity</span>
+                                                            <p>$269,312.319</p>
+                                                        </td>
+                                                        <td>
+                                                            <span>Multiplier</span>
+                                                            <p>50x</p>
+                                                        </td>
+                                                        <td class="text-center ">
+                                                            <div class="dropdown ">
+                                                                <span class="dropdown_icon "><i class="fa fa-caret-down "></i></span>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="custom_border ">
+                                                        <td>
+                                                            <div class="d-flex align-items-center ">
+                                                                <div class="user_img ">
+                                                                    <div class="user_img_inner">
+                                                                        <img src="assets/img/data-info/1.png " alt=" ">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="user_content ">
+                                                                    <p>Cake - BNB</p>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <span>Core</span>
+                                                            <div class="checkbox ">
+                                                                <input type='checkbox' name="checkbox " id="checkbox4 ">
+                                                                <label for="checkbox4 ">
+                                                                <span class="checkbox_icon "></span>
+                                                            </label>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <span>Earned</span>
+                                                            <p>10</p>
+                                                        </td>
+                                                        <td>
+                                                            <span>APR</span>
+                                                            <p>32.05%</p>
+                                                        </td>
+                                                        <td>
+                                                            <span>Liquidity</span>
+                                                            <p>$269,312.319</p>
+                                                        </td>
+                                                        <td>
+                                                            <span>Multiplier</span>
+                                                            <p>50x</p>
+                                                        </td>
+                                                        <td class="text-center ">
+                                                            <div class="dropdown ">
+                                                                <span class="dropdown_icon "><i class="fa fa-caret-down "></i></span>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="custom_border ">
+                                                        <td>
+                                                            <div class="d-flex align-items-center ">
+                                                                <div class="user_img ">
+                                                                    <div class="user_img_inner">
+                                                                        <img src="assets/img/data-info/1.png " alt=" ">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="user_content ">
+                                                                    <p>Cake - BNB</p>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <span>Core</span>
+                                                            <div class="checkbox ">
+                                                                <input type='checkbox' name="checkbox " id="checkbox5 ">
+                                                                <label for="checkbox5 ">
+                                                                <span class="checkbox_icon "></span>
+                                                            </label>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <span>Earned</span>
+                                                            <p>10</p>
+                                                        </td>
+                                                        <td>
+                                                            <span>APR</span>
+                                                            <p>32.05%</p>
+                                                        </td>
+                                                        <td>
+                                                            <span>Liquidity</span>
+                                                            <p>$269,312.319</p>
+                                                        </td>
+                                                        <td>
+                                                            <span>Multiplier</span>
+                                                            <p>50x</p>
+                                                        </td>
+                                                        <td class="text-center ">
+                                                            <div class="dropdown ">
+                                                                <span class="dropdown_icon "><i class="fa fa-caret-down "></i></span>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="custom_border ">
+                                                        <td>
+                                                            <div class="d-flex align-items-center ">
+                                                                <div class="user_img ">
+                                                                    <div class="user_img_inner">
+                                                                        <img src="assets/img/data-info/1.png " alt=" ">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="user_content ">
+                                                                    <p>Cake - BNB</p>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <span>Core</span>
+                                                            <div class="checkbox ">
+                                                                <input type='checkbox' name="checkbox " id="checkbox6 ">
+                                                                <label for="checkbox6 ">
+                                                                <span class="checkbox_icon "></span>
+                                                            </label>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <span>Earned</span>
+                                                            <p>10</p>
+                                                        </td>
+                                                        <td>
+                                                            <span>APR</span>
+                                                            <p>32.05%</p>
+                                                        </td>
+                                                        <td>
+                                                            <span>Liquidity</span>
+                                                            <p>$269,312.319</p>
+                                                        </td>
+                                                        <td>
+                                                            <span>Multiplier</span>
+                                                            <p>50x</p>
+                                                        </td>
+                                                        <td class="text-center ">
+                                                            <div class="dropdown ">
+                                                                <span class="dropdown_icon "><i class="fa fa-caret-down "></i></span>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="custom_border ">
+                                                        <td>
+                                                            <div class="d-flex align-items-center ">
+                                                                <div class="user_img ">
+                                                                    <div class="user_img_inner">
+                                                                        <img src="assets/img/data-info/1.png " alt=" ">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="user_content ">
+                                                                    <p>Cake - BNB</p>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <span>Core</span>
+                                                            <div class="checkbox ">
+                                                                <input type='checkbox' name="checkbox " id="checkbox7 ">
+                                                                <label for="checkbox7 ">
+                                                                <span class="checkbox_icon "></span>
+                                                            </label>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <span>Earned</span>
+                                                            <p>10</p>
+                                                        </td>
+                                                        <td>
+                                                            <span>APR</span>
+                                                            <p>32.05%</p>
+                                                        </td>
+                                                        <td>
+                                                            <span>Liquidity</span>
+                                                            <p>$269,312.319</p>
+                                                        </td>
+                                                        <td>
+                                                            <span>Multiplier</span>
+                                                            <p>50x</p>
+                                                        </td>
+                                                        <td class="text-center ">
+                                                            <div class="dropdown ">
+                                                                <span class="dropdown_icon "><i class="fa fa-caret-down "></i></span>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <nav class="pagination ">
+                                            <ul>
+                                                <li><a href="# "><i class="fal fa-arrow-left "></i></a></li>
+                                                <li><span>Page 1 of 1</span></li>
+                                                <li><a href="# "><i class="fal fa-arrow-right "></i></a></li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                            <div class="pools">
+                                <div class="min_padding banner_info">
+                                    <div class="banner_info_inner">
+                                        <h3>Syrup Pools</h3>
+                                        <p>Stake LP Tokens to Earn.</p>
+                                        <a href="#" class="boxed_btn">
+                                            <span>Community Auctions<i class="fal fa-arrow-right"></i></span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="datainfo">
+                                    <div class="datainfo_header row align-items-end">
+                                        <div class="col-lg-5">
+                                            <div class="datainfo_header_left">
+                                                <div>
+                                                    <div class="input-control">
+                                                        <label for="#" class="input-control-label">Sort By</label>
+                                                        <select name="" id="">
+                                                            <option value="1">Hot</option>
+                                                            <option value="2">Hot</option>
+                                                            <option value="3">Cool</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div class="input-control">
+                                                        <label for="#" class="input-control-label">Search</label>
+                                                        <label for="query" class="input-control-icon"><i class="fal fa-search"></i></label>
+                                                        <input type="search" name="query" id="query" placeholder="Search" class="input-control-input">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-7 text-end">
+                                            <div class="datainfo_header_right">
+                                                <div class="checkbox">
+                                                    <input type="checkbox" name="checkbox" id="checkbox">
+                                                    <label for="checkbox">
+                                                        <span class="checkbox_icon "></span>
+                                                        <span class="checkbox_title ">Stack Only</span>
+                                                    </label>
+                                                </div>
+                                                <div class="custom_border ">
+                                                    <ul class="related ">
+                                                        <li class="d-inline-block "><a href="# " class="active ">Live</a></li>
+                                                        <li class="d-inline-block "><a href="# ">Finished</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="view_option ">
+                                                    <ul>
+                                                        <li class="d-inline-block custom_border active ">
+                                                            <a href="# ">
+                                                                <svg width="22 " height="22 " viewBox="0 0 22 22 " fill="none " xmlns="http://www.w3.org/2000/svg ">
+                                                                    <path d="M15.3309 0V5.82595H22V0H15.3309ZM15.3309 6.97562V13.9512H22V6.97562H15.3309ZM15.3309 15.0244V22H22V15.0244H15.3309ZM6.74564 22V15.0244H0V22H6.74564ZM6.74564 13.9512V6.97562H0V13.9512H6.74564ZM6.745645.82595V0H0V5.82595H6.74564ZM7.8188 0V5.82595H14.1812V0H7.8188ZM7.8188 6.97562V13.9512H14.1812V6.97562H7.8188ZM7.8188 15.0244V22H14.1812V15.0244H7.8188Z " fill="white "/>
+                                                                </svg>
+                                                            </a>
+                                                        </li>
+                                                        <li class="d-inline-block custom_border ">
+                                                            <a href="# ">
+                                                                <svg width="22 " height="22 " viewBox="0 0 22 22 " fill="none " xmlns="http://www.w3.org/2000/svg ">
+                                                                    <path d="M6.73772 22V15.0398H0.0292969V22H6.73772ZM6.73772 13.8658V6.90564H0.0292969V13.8658H6.73772ZM6.73772 5.81539V0.0292664H0.0292969V5.81539H6.73772ZM7.82786 0.0292664V5.81539H22V0.0292664H7.82786ZM7.827866.9057V13.8659H22V6.9057H7.82786ZM7.82786 15.0398V22H22V15.0398H7.82786Z " fill="white "/>
+                                                                </svg>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="datainfo-table ">
+                                        <div class="datainfo-table-responsive">
+                                            <table>
+                                                <tbody>
+                                                    <tr class="custom_border ">
+                                                        <td>
+                                                            <div class="d-flex align-items-center ">
+                                                                <div class="user_img ">
+                                                                    <div class="user_img_inner">
+                                                                        <img src="assets/img/data-info/1.png " alt=" ">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="user_content ">
+                                                                    <p>Cake - BNB</p>
+                                                                    <span>Stake, Earn - And More</span>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <span>Cake Staked</span>
+                                                            <p>0.0 <span class="text-uppercase d-inline-block">usd</span></p>
+                                                        </td>
+                                                        <td>
+                                                            <span>Flexible APY</span>
+                                                            <p>5.94%</p>
+                                                        </td>
+                                                        <td>
+                                                            <span>Locked APY</span>
+                                                            <p>Up to 127.31%</p>
+                                                        </td>
+                                                        <td>
+                                                            <span>Total Staked</span>
+                                                            <p>167,165,214 Cake</p>
+                                                        </td>
+                                                        <td>
+                                                            <span>Multiplier</span>
+                                                            <p>167,165,214 Cake</p>
+                                                        </td>
+                                                        <td>
+                                                            <a href="#">Details <i class="fa fa-caret-down"></i></a>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <nav class="pagination ">
+                                            <ul>
+                                                <li><a href="# "><i class="fal fa-arrow-left "></i></a></li>
+                                                <li><span>Page 1 of 1</span></li>
+                                                <li><a href="# "><i class="fal fa-arrow-right "></i></a></li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+
+
+
+    <!--Footer Start-->
+    <footer class="footer-area ">
+        <div class="container ">
+            <div class="row footer-top ">
+                <div class="col-md-12 col-lg-3 text-md-center text-lg-start mb-4 mb-lg-0 ">
+                    <a href="# " class="site-logo ">
+                        <img src="assets/img/bitme-site-logo.png " alt="site-logo ">
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-3 col-lg-2 mt-4 mt-md-0 ">
+                    <div class="footer-widget ">
+                        <h4>About</h4>
+                        <ul>
+                            <li><a href="# ">Contact</a></li>
+                            <li><a href="# ">Brand</a></li>
+                            <li><a href="# ">Blog</a></li>
+                            <li><a href="# ">Community</a></li>
+                            <li><a href="# ">Online Store</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3 col-lg-2 mt-4 mt-md-0 ">
+                    <div class="footer-widget ">
+                        <h4>HELP</h4>
+                        <ul>
+                            <li><a href="# ">Customer Support</a></li>
+                            <li><a href="# ">Trobleshooting</a></li>
+                            <li><a href="# ">Guides</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3 col-lg-2 mt-4 mt-md-0 ">
+                    <div class="footer-widget ">
+                        <h4>DEVELOPERS</h4>
+                        <ul>
+                            <li><a href="# ">Github</a></li>
+                            <li><a href="# ">Documentation</a></li>
+                            <li><a href="# ">Bug Bounty</a></li>
+                            <li><a href="# ">Audit</a></li>
+                            <li><a href="# ">Careers</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3 col-lg-2 mt-4 mt-md-0 ">
+                    <div class="footer-widget ">
+                        <h4>social media</h4>
+                        <ul>
+                            <li><a href="# ">Facebook</a></li>
+                            <li><a href="# ">Twitter</a></li>
+                            <li><a href="# ">Instagram</a></li>
+                            <li><a href="# ">Telegram</a></li>
+                            <li><a href="# ">Linkedin</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row footer-bottom justify-content-center align-items-center ">
+                <img src="assets/img/Line-border.png " alt="bitme-line-border ">
+                <div class="col-md-6 col-lg-6 mt-4 mt-md-0 py-4 text-center ">
+                    <p>Copyright &copy; Bitme
+                        <script>
+                            document.write(new Date().getFullYear())
+                        </script> | All rights reserved</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--Footer End-->
+
+    <script src="assets/js/jquery.min.js "></script>
+    <script src="assets/js/bootstrap.min.js "></script>
+    <script src="assets/js/jquery.nice-select.min.js "></script>
+    <script src="assets/js/popper.min.js "></script>
+    <script src="assets/js/main.js "></script>
+</body>
+
+</html>
