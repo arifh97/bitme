@@ -1435,6 +1435,7 @@ input[type=number] {
           justify-content: space-between;
   padding-bottom: 15px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  margin-bottom: 20px;
 }
 
 .swap_card_header h4 {
@@ -1482,6 +1483,13 @@ input[type=number] {
 
 .swap_card_header ul li a svg path {
   fill: white;
+}
+
+.swap_card_item {
+  background-color: #0c233e;
+  border: 1px solid rgba(0, 203, 255, 0.1);
+  padding: 12px;
+  border-radius: 10px;
 }
 
 /**
