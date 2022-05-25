@@ -1,0 +1,39 @@
+/*== SWAP PAGE CSS ==*/
+
+.swap {
+    &_card {
+        &_header {
+            @include flex;
+            justify-content: space-between;
+            padding-bottom: 15px;
+            border-bottom: 1px solid rgba($color: $white, $alpha: .10);
+            & h4 {
+                @include font-20;
+                margin-bottom: 8px;
+            }
+            & p {
+                font-size: 12px;
+            }
+            & ul {
+                & li {
+                    display: inline-block;
+                    & a {
+                        --action-icon: 35px;
+                        @include flex;
+                        justify-content: center;
+                        width: var(--action-icon);
+                        height: var(--action-icon);
+                        border-radius: 100%;
+                        text-align: center !important;
+                        background-color: $darkbg;
+                        & svg {
+                            & path {
+                                fill: $white;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

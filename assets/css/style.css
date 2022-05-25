@@ -545,6 +545,7 @@ input[type=number] {
   background-color: #091B31;
   color: white !important;
   padding: 15px 32px;
+  text-transform: capitalize;
 }
 
 @media only screen and (max-width: 767px) {
@@ -649,6 +650,12 @@ input[type=number] {
 
 .pagination ul li a:hover {
   color: #00CBFF;
+}
+
+@media only screen and (min-width: 1367px) {
+  .container {
+    max-width: 1220px;
+  }
 }
 
 /*=== HEADINGA AREA CSS START ===*/
@@ -1413,6 +1420,68 @@ input[type=number] {
 
 .transactions .pagination {
   margin-top: 10px;
+}
+
+/*== SWAP PAGE CSS ==*/
+.swap_card_header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 15px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.swap_card_header h4 {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+@media only screen and (max-width: 767px) {
+  .swap_card_header h4 {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 479px) {
+  .swap_card_header h4 {
+    font-size: 16px;
+  }
+}
+
+.swap_card_header p {
+  font-size: 12px;
+}
+
+.swap_card_header ul li {
+  display: inline-block;
+}
+
+.swap_card_header ul li a {
+  --action-icon: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: var(--action-icon);
+  height: var(--action-icon);
+  border-radius: 100%;
+  text-align: center !important;
+  background-color: #0c233e;
+}
+
+.swap_card_header ul li a svg path {
+  fill: white;
 }
 
 /**

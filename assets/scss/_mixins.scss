@@ -89,6 +89,16 @@
     }
 }
 
+@mixin font-20 {
+    font-size: 20px;
+    @include sm {
+        font-size: 18px;
+    }
+    @include ssm {
+        font-size: 16px;
+    }
+}
+
 @mixin font-40 {
     font-size: 40px;
     line-height: 1.2;

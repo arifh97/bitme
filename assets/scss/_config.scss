@@ -80,6 +80,7 @@
             background-color: $primary-2;
             color: $white !important;
             padding: 15px 32px;
+            text-transform: capitalize;
             @include sm {
                 padding: 13px 23px;
             }
@@ -162,5 +163,11 @@
                 }
             }
         }
+    }
+}
+
+.container {
+    @media only screen and (min-width: 1367px) {
+        max-width: 1220px;
     }
 }
