@@ -1810,6 +1810,13 @@ input[type=number] {
   font-size: 14px;
   color: #00CBFF;
   cursor: pointer;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.swap_card_item_exchange #icon:hover {
+  background-color: #00CBFF;
+  color: white;
 }
 
 .swap_card_item_exchange #icon img {
@@ -1953,14 +1960,16 @@ input[type=number] {
 
 .swap > .row,
 .limit > .row,
-.liquidity > .row {
+.liquidity > .row,
+.mb-30 {
   margin-bottom: -30px;
 }
 
 @media only screen and (max-width: 767px) {
   .swap > .row,
   .limit > .row,
-  .liquidity > .row {
+  .liquidity > .row,
+  .mb-30 {
     margin-bottom: -20px;
   }
 }

@@ -107,6 +107,11 @@
                     font-size: 14px;
                     color: $primary;
                     cursor: pointer;
+                    @include transition;
+                    &:hover {
+                        background-color: $primary;
+                        color: $white
+                    }
                     & img {
                         @include img(cover);
                     }
@@ -226,7 +231,8 @@
 
 .swap>.row,
 .limit>.row,
-.liquidity>.row {
+.liquidity>.row,
+.mb-30 {
     margin-bottom: -30px;
     @include sm {
         margin-bottom: -20px;
