@@ -11,17 +11,25 @@
 
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/css/aos.min.css">
     <link rel="stylesheet" href="assets/css/nice-select.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
 
-    <!-- Header Start -->
+    <!-- prelaoder  -->
+    <div id='preloader'>
+        <div id='status'>
+            <img src='assets/img/loading.gif' alt='LOADING....!!!!!' />
+        </div>
+    </div>
+    <!-- prelaoder  -->
+
     <header class="header-area">
         <nav id="navbar_top" class="navbar navbar-expand-lg">
             <div class="container">
-                <a class="navbar-brand site-logo" href="index.html">
+                <a class="navbar-brand site-logo" href="#">
                     <img src="assets/img/bitme-site-logo.png" alt="site-logo">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -30,16 +38,19 @@
                 <div class="collapse navbar-collapse" id="navbarText">
                     <ul class="navbar-nav main-menu pt-4 pt-lg-0 mb-2 mb-lg-0">
                         <li class="nav-item active">
-                            <a class="nav-link" href="#">Trade</a>
+                            <a class="nav-link" href="swap.html">Trade</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#roadmap">NFT</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Earn</a>
+                            <a class="nav-link" href="earn.html">Earn</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Win</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="info.html">Info</a>
                         </li>
 
                         <div class="menu-btn">
@@ -50,853 +61,233 @@
             </div>
         </nav>
     </header>
-    <div class="header-clear"></div>
     <!-- Header End-->
-    <main class="min_padding_top section_padding_bottom ">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="page_navbar">
-                        <ul class="nav nav-pills" id="pills-tab" role="tablist">
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Farms</button>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Pools</button>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-12">
-                    <div class="tab-content" id="pills-tabContent">
-                        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-                            <div class="farms">
-                                <div class="min_padding banner_info">
-                                    <div class="banner_info_inner">
-                                        <h3>Farms</h3>
-                                        <p>Stake LP Tokens to Earn.</p>
-                                        <a href="#" class="boxed_btn">
-                                            <span>Community Auctions<i class="fal fa-arrow-right"></i></span>
-                                        </a>
+
+    <main class="homepge">
+        <!--Hero Section area Start-->
+        <section class="hero-area">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-xl-5 col-lg-6 col-md-7">
+                        <div class="hero-content-area-wrapper">
+                            <h1>The space is <br> made of bitme.</h1>
+                            <p>Trade, earn, and win crypto on the most popular decentralized platform in the galaxy.</p>
+                            <div class="buttons-area">
+                                <a href="#" class="boxed-btn">Connect Wallet</a>
+                                <a href="#" class="inline-btn">Trade Now</a>
+                            </div>
+
+                            <div class="row counter-area justify-content-center">
+                                <!--Single Counter item-->
+                                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-6 text-center">
+                                    <div class="single-counter-item">
+                                        <h3 class="count-number">$<span>959</span>B+</h3>
+                                        <p>Trade Volume</p>
                                     </div>
                                 </div>
-                                <div class="datainfo">
-                                    <div class="datainfo_header row align-items-end">
-                                        <div class="col-lg-5">
-                                            <div class="datainfo_header_left">
-                                                <div>
-                                                    <div class="input-control">
-                                                        <label for="#" class="input-control-label">Sort By</label>
-                                                        <select name="" id="">
-                                                            <option value="1">Hot</option>
-                                                            <option value="2">Hot</option>
-                                                            <option value="3">Cool</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                                <div>
-                                                    <div class="input-control">
-                                                        <label for="#" class="input-control-label">Search</label>
-                                                        <label for="query" class="input-control-icon"><i class="fal fa-search"></i></label>
-                                                        <input type="search" name="query" id="query" placeholder="Search" class="input-control-input">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-7 text-end">
-                                            <div class="datainfo_header_right">
-                                                <div class="checkbox">
-                                                    <input type="checkbox" name="checkbox" id="checkbox">
-                                                    <label for="checkbox">
-                                                        <span class="checkbox_icon "></span>
-                                                        <span class="checkbox_title ">Stack Only</span>
-                                                    </label>
-                                                </div>
-                                                <div class="custom_border ">
-                                                    <ul class="related ">
-                                                        <li class="d-inline-block "><a href="# " class="active ">Live</a></li>
-                                                        <li class="d-inline-block "><a href="# ">Finished</a></li>
-                                                    </ul>
-                                                </div>
-                                                <div class="view_option ">
-                                                    <ul>
-                                                        <li class="d-inline-block custom_border active ">
-                                                            <a href="# ">
-                                                                <svg width="22 " height="22 " viewBox="0 0 22 22 " fill="none " xmlns="http://www.w3.org/2000/svg ">
-                                                                    <path d="M15.3309 0V5.82595H22V0H15.3309ZM15.3309 6.97562V13.9512H22V6.97562H15.3309ZM15.3309 15.0244V22H22V15.0244H15.3309ZM6.74564 22V15.0244H0V22H6.74564ZM6.74564 13.9512V6.97562H0V13.9512H6.74564ZM6.745645.82595V0H0V5.82595H6.74564ZM7.8188 0V5.82595H14.1812V0H7.8188ZM7.8188 6.97562V13.9512H14.1812V6.97562H7.8188ZM7.8188 15.0244V22H14.1812V15.0244H7.8188Z " fill="white "/>
-                                                                </svg>
-                                                            </a>
-                                                        </li>
-                                                        <li class="d-inline-block custom_border ">
-                                                            <a href="# ">
-                                                                <svg width="22 " height="22 " viewBox="0 0 22 22 " fill="none " xmlns="http://www.w3.org/2000/svg ">
-                                                                    <path d="M6.73772 22V15.0398H0.0292969V22H6.73772ZM6.73772 13.8658V6.90564H0.0292969V13.8658H6.73772ZM6.73772 5.81539V0.0292664H0.0292969V5.81539H6.73772ZM7.82786 0.0292664V5.81539H22V0.0292664H7.82786ZM7.827866.9057V13.8659H22V6.9057H7.82786ZM7.82786 15.0398V22H22V15.0398H7.82786Z " fill="white "/>
-                                                                </svg>
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
+                                <!--Single Counter item-->
+                                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-6 text-center">
+                                    <div class="single-counter-item">
+                                        <h3 class="count-number"><span>96</span>M+</h3>
+                                        <p>All Time Trades</p>
                                     </div>
-                                    <div class="datainfo-table ">
-                                        <div class="datainfo-table-responsive">
-                                            <table>
-                                                <tbody>
-                                                    <tr class="custom_border ">
-                                                        <td>
-                                                            <div class="d-flex align-items-center ">
-                                                                <div class="user_img ">
-                                                                    <div class="user_img_inner">
-                                                                        <img src="assets/img/data-info/1.png " alt=" ">
-                                                                    </div>
-                                                                </div>
-                                                                <div class="user_content ">
-                                                                    <p>Cake - BNB</p>
-                                                                </div>
-                                                            </div>
-                                                        </td>
-                                                        <td>
-                                                            <span>Core</span>
-                                                            <div class="checkbox ">
-                                                                <input type='checkbox' name="checkbox " id="checkbox ">
-                                                                <label for="checkbox ">
-                                                                <span class="checkbox_icon "></span>
-                                                            </label>
-                                                            </div>
-                                                        </td>
-                                                        <td>
-                                                            <span>Earned</span>
-                                                            <p>10</p>
-                                                        </td>
-                                                        <td>
-                                                            <span>APR</span>
-                                                            <p>32.05%</p>
-                                                        </td>
-                                                        <td>
-                                                            <span>Liquidity</span>
-                                                            <p>$269,312.319</p>
-                                                        </td>
-                                                        <td>
-                                                            <span>Multiplier</span>
-                                                            <p>50x</p>
-                                                        </td>
-                                                        <td class="text-center ">
-                                                            <div class="dropdown ">
-                                                                <span class="dropdown_icon "><i class="fa fa-caret-down "></i></span>
-                                                            </div>
-                                                        </td>
-                                                    </tr>
-                                                    <tr class="custom_border ">
-                                                        <td>
-                                                            <div class="d-flex align-items-center ">
-                                                                <div class="user_img ">
-                                                                    <div class="user_img_inner">
-                                                                        <img src="assets/img/data-info/1.png " alt=" ">
-                                                                    </div>
-                                                                </div>
-                                                                <div class="user_content ">
-                                                                    <p>Cake - BNB</p>
-                                                                </div>
-                                                            </div>
-                                                        </td>
-                                                        <td>
-                                                            <span>Core</span>
-                                                            <div class="checkbox ">
-                                                                <input type='checkbox' name="checkbox " id="checkbox1 ">
-                                                                <label for="checkbox1 ">
-                                                                <span class="checkbox_icon "></span>
-                                                            </label>
-                                                            </div>
-                                                        </td>
-                                                        <td>
-                                                            <span>Earned</span>
-                                                            <p>10</p>
-                                                        </td>
-                                                        <td>
-                                                            <span>APR</span>
-                                                            <p>32.05%</p>
-                                                        </td>
-                                                        <td>
-                                                            <span>Liquidity</span>
-                                                            <p>$269,312.319</p>
-                                                        </td>
-                                                        <td>
-                                                            <span>Multiplier</span>
-                                                            <p>50x</p>
-                                                        </td>
-                                                        <td class="text-center ">
-                                                            <div class="dropdown ">
-                                                                <span class="dropdown_icon "><i class="fa fa-caret-down "></i></span>
-                                                            </div>
-                                                        </td>
-                                                    </tr>
-                                                    <tr class="custom_border ">
-                                                        <td>
-                                                            <div class="d-flex align-items-center ">
-                                                                <div class="user_img ">
-                                                                    <div class="user_img_inner">
-                                                                        <img src="assets/img/data-info/1.png " alt=" ">
-                                                                    </div>
-                                                                </div>
-                                                                <div class="user_content ">
-                                                                    <p>Cake - BNB</p>
-                                                                </div>
-                                                            </div>
-                                                        </td>
-                                                        <td>
-                                                            <span>Core</span>
-                                                            <div class="checkbox ">
-                                                                <input type='checkbox' name="checkbox " id="checkbox2 ">
-                                                                <label for="checkbox2 ">
-                                                                <span class="checkbox_icon "></span>
-                                                            </label>
-                                                            </div>
-                                                        </td>
-                                                        <td>
-                                                            <span>Earned</span>
-                                                            <p>10</p>
-                                                        </td>
-                                                        <td>
-                                                            <span>APR</span>
-                                                            <p>32.05%</p>
-                                                        </td>
-                                                        <td>
-                                                            <span>Liquidity</span>
-                                                            <p>$269,312.319</p>
-                                                        </td>
-                                                        <td>
-                                                            <span>Multiplier</span>
-                                                            <p>50x</p>
-                                                        </td>
-                                                        <td class="text-center ">
-                                                            <div class="dropdown ">
-                                                                <span class="dropdown_icon "><i class="fa fa-caret-down "></i></span>
-                                                            </div>
-                                                        </td>
-                                                    </tr>
-                                                    <tr class="custom_border ">
-                                                        <td>
-                                                            <div class="d-flex align-items-center ">
-                                                                <div class="user_img ">
-                                                                    <div class="user_img_inner">
-                                                                        <img src="assets/img/data-info/1.png " alt=" ">
-                                                                    </div>
-                                                                </div>
-                                                                <div class="user_content ">
-                                                                    <p>Cake - BNB</p>
-                                                                </div>
-                                                            </div>
-                                                        </td>
-                                                        <td>
-                                                            <span>Core</span>
-                                                            <div class="checkbox ">
-                                                                <input type='checkbox' name="checkbox " id="checkbox3 ">
-                                                                <label for="checkbox3 ">
-                                                                <span class="checkbox_icon "></span>
-                                                            </label>
-                                                            </div>
-                                                        </td>
-                                                        <td>
-                                                            <span>Earned</span>
-                                                            <p>10</p>
-                                                        </td>
-                                                        <td>
-                                                            <span>APR</span>
-                                                            <p>32.05%</p>
-                                                        </td>
-                                                        <td>
-                                                            <span>Liquidity</span>
-                                                            <p>$269,312.319</p>
-                                                        </td>
-                                                        <td>
-                                                            <span>Multiplier</span>
-                                                            <p>50x</p>
-                                                        </td>
-                                                        <td class="text-center ">
-                                                            <div class="dropdown ">
-                                                                <span class="dropdown_icon "><i class="fa fa-caret-down "></i></span>
-                                                            </div>
-                                                        </td>
-                                                    </tr>
-                                                    <tr class="custom_border ">
-                                                        <td>
-                                                            <div class="d-flex align-items-center ">
-                                                                <div class="user_img ">
-                                                                    <div class="user_img_inner">
-                                                                        <img src="assets/img/data-info/1.png " alt=" ">
-                                                                    </div>
-                                                                </div>
-                                                                <div class="user_content ">
-                                                                    <p>Cake - BNB</p>
-                                                                </div>
-                                                            </div>
-                                                        </td>
-                                                        <td>
-                                                            <span>Core</span>
-                                                            <div class="checkbox ">
-                                                                <input type='checkbox' name="checkbox " id="checkbox4 ">
-                                                                <label for="checkbox4 ">
-                                                                <span class="checkbox_icon "></span>
-                                                            </label>
-                                                            </div>
-                                                        </td>
-                                                        <td>
-                                                            <span>Earned</span>
-                                                            <p>10</p>
-                                                        </td>
-                                                        <td>
-                                                            <span>APR</span>
-                                                            <p>32.05%</p>
-                                                        </td>
-                                                        <td>
-                                                            <span>Liquidity</span>
-                                                            <p>$269,312.319</p>
-                                                        </td>
-                                                        <td>
-                                                            <span>Multiplier</span>
-                                                            <p>50x</p>
-                                                        </td>
-                                                        <td class="text-center ">
-                                                            <div class="dropdown ">
-                                                                <span class="dropdown_icon "><i class="fa fa-caret-down "></i></span>
-                                                            </div>
-                                                        </td>
-                                                    </tr>
-                                                    <tr class="custom_border ">
-                                                        <td>
-                                                            <div class="d-flex align-items-center ">
-                                                                <div class="user_img ">
-                                                                    <div class="user_img_inner">
-                                                                        <img src="assets/img/data-info/1.png " alt=" ">
-                                                                    </div>
-                                                                </div>
-                                                                <div class="user_content ">
-                                                                    <p>Cake - BNB</p>
-                                                                </div>
-                                                            </div>
-                                                        </td>
-                                                        <td>
-                                                            <span>Core</span>
-                                                            <div class="checkbox ">
-                                                                <input type='checkbox' name="checkbox " id="checkbox5 ">
-                                                                <label for="checkbox5 ">
-                                                                <span class="checkbox_icon "></span>
-                                                            </label>
-                                                            </div>
-                                                        </td>
-                                                        <td>
-                                                            <span>Earned</span>
-                                                            <p>10</p>
-                                                        </td>
-                                                        <td>
-                                                            <span>APR</span>
-                                                            <p>32.05%</p>
-                                                        </td>
-                                                        <td>
-                                                            <span>Liquidity</span>
-                                                            <p>$269,312.319</p>
-                                                        </td>
-                                                        <td>
-                                                            <span>Multiplier</span>
-                                                            <p>50x</p>
-                                                        </td>
-                                                        <td class="text-center ">
-                                                            <div class="dropdown ">
-                                                                <span class="dropdown_icon "><i class="fa fa-caret-down "></i></span>
-                                                            </div>
-                                                        </td>
-                                                    </tr>
-                                                    <tr class="custom_border ">
-                                                        <td>
-                                                            <div class="d-flex align-items-center ">
-                                                                <div class="user_img ">
-                                                                    <div class="user_img_inner">
-                                                                        <img src="assets/img/data-info/1.png " alt=" ">
-                                                                    </div>
-                                                                </div>
-                                                                <div class="user_content ">
-                                                                    <p>Cake - BNB</p>
-                                                                </div>
-                                                            </div>
-                                                        </td>
-                                                        <td>
-                                                            <span>Core</span>
-                                                            <div class="checkbox ">
-                                                                <input type='checkbox' name="checkbox " id="checkbox6 ">
-                                                                <label for="checkbox6 ">
-                                                                <span class="checkbox_icon "></span>
-                                                            </label>
-                                                            </div>
-                                                        </td>
-                                                        <td>
-                                                            <span>Earned</span>
-                                                            <p>10</p>
-                                                        </td>
-                                                        <td>
-                                                            <span>APR</span>
-                                                            <p>32.05%</p>
-                                                        </td>
-                                                        <td>
-                                                            <span>Liquidity</span>
-                                                            <p>$269,312.319</p>
-                                                        </td>
-                                                        <td>
-                                                            <span>Multiplier</span>
-                                                            <p>50x</p>
-                                                        </td>
-                                                        <td class="text-center ">
-                                                            <div class="dropdown ">
-                                                                <span class="dropdown_icon "><i class="fa fa-caret-down "></i></span>
-                                                            </div>
-                                                        </td>
-                                                    </tr>
-                                                    <tr class="custom_border ">
-                                                        <td>
-                                                            <div class="d-flex align-items-center ">
-                                                                <div class="user_img ">
-                                                                    <div class="user_img_inner">
-                                                                        <img src="assets/img/data-info/1.png " alt=" ">
-                                                                    </div>
-                                                                </div>
-                                                                <div class="user_content ">
-                                                                    <p>Cake - BNB</p>
-                                                                </div>
-                                                            </div>
-                                                        </td>
-                                                        <td>
-                                                            <span>Core</span>
-                                                            <div class="checkbox ">
-                                                                <input type='checkbox' name="checkbox " id="checkbox7 ">
-                                                                <label for="checkbox7 ">
-                                                                <span class="checkbox_icon "></span>
-                                                            </label>
-                                                            </div>
-                                                        </td>
-                                                        <td>
-                                                            <span>Earned</span>
-                                                            <p>10</p>
-                                                        </td>
-                                                        <td>
-                                                            <span>APR</span>
-                                                            <p>32.05%</p>
-                                                        </td>
-                                                        <td>
-                                                            <span>Liquidity</span>
-                                                            <p>$269,312.319</p>
-                                                        </td>
-                                                        <td>
-                                                            <span>Multiplier</span>
-                                                            <p>50x</p>
-                                                        </td>
-                                                        <td class="text-center ">
-                                                            <div class="dropdown ">
-                                                                <span class="dropdown_icon "><i class="fa fa-caret-down "></i></span>
-                                                            </div>
-                                                        </td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                        <nav class="pagination ">
-                                            <ul>
-                                                <li><a href="# "><i class="fal fa-arrow-left "></i></a></li>
-                                                <li><span>Page 1 of 1</span></li>
-                                                <li><a href="# "><i class="fal fa-arrow-right "></i></a></li>
-                                            </ul>
-                                        </nav>
+                                </div>
+                                <!--Single Counter item-->
+                                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-6 text-center mt-4 mt-sm-0">
+                                    <div class="single-counter-item">
+                                        <h3 class="count-number"><span>250</span>+</h3>
+                                        <p>Integrations</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-                            <div class="pools">
-                                <div class="min_padding banner_info">
-                                    <div class="banner_info_inner">
-                                        <h3>Syrup Pools</h3>
-                                        <p>Stake LP Tokens to Earn.</p>
-                                        <a href="#" class="boxed_btn">
-                                            <span>Community Auctions<i class="fal fa-arrow-right"></i></span>
-                                        </a>
+                    </div>
+                    <div class="col-xl-7 col-lg-6  col-md-5 mt-5 mt-md-0 pt-4 pt-md-0">
+                        <div class="hero-right-img">
+                            <img class="hero-star-1" src="assets/img/Star-1.svg" alt="">
+                            <img class="hero-planet" src="assets/img/hero-planet-img.svg" alt="hero-img">
+                            <img class="hero-star-2" src="assets/img/Star-2.svg" alt="">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Hero Section area End-->
+
+        <!--Services area start-->
+        <section class="services-area">
+            <img class="s-bg" src="assets/img/bitme-service-section-bg.png" alt="">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-6 col-lg-8 col-sm-10 text-center">
+                        <div class="section-title">
+                            <span class="d-block mb-3">Join the bitme echosystem</span>
+                            <h2 class="mb-4 pb-1">Used by millions. <br> Trusted with billions.</h2>
+                            <p>Bitme has the most users of any decentralized platform, ever. And those users are now entrusting the platform with over $5.8 billion in funds.
+                                <p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <div class="col-lg-3 col-md-6 mb-4 mb-lg-0 aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000" data-aos-duration>
+                        <div class="single-service-area">
+                            <h3>NFT</h3>
+                            <p>Decentralisation is the process by which the activities of an organization</p>
+                            <img src="assets/img/bitme-nft-logo.png" alt="nft-logo">
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4  mb-lg-0 aos-init aos-animate" data-aos="fade-up" data-aos-duration="1300" data-aos-duration>
+                        <div class="single-service-area">
+                            <h3>Staking</h3>
+                            <p>Decentralisation is the process by which the activities of an organization</p>
+                            <img src="assets/img/bitme-staking-logo.png" alt="staking-logo">
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4  mb-lg-0 aos-init aos-animate" data-aos="fade-up" data-aos-duration="1600" data-aos-duration>
+                        <div class="single-service-area">
+                            <h3>Trade</h3>
+                            <p>Decentralisation is the process by which the activities of an organization</p>
+                            <img src="assets/img/bitme-trade-logo.png" alt="trade-logo">
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4 mb-lg-0 aos-init aos-animate" data-aos="fade-up" data-aos-duration="1900" data-aos-duration>
+                        <div class="single-service-area">
+                            <h3>Earn</h3>
+                            <p>Decentralisation is the process by which the activities of an organization</p>
+                            <img src="assets/img/bitme-earn-logo.png" alt="earn-logo">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 mt-1">
+                        <div class="buttons-area justify-content-center">
+                            <a href="#" class="boxed-btn">Learn More</a>
+                            <a href="#" class="inline-btn">Trade Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Services area end-->
+
+        <!--Ecosystem area start-->
+        <section class="ecosystem-area">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-xl-5 col-lg-6 col-md-6 order-2 order-md-1 aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000" data-aos-duration>
+                        <div class="ecosystem-content-area">
+                            <h4>Join the bitme echosystem</h4>
+                            <h2 class="mt-3 mb-4"><span>Trade anything.</span> No <br> registration, no hassle.</h2>
+                            <p>Trade any token on BNB Smart Chain in seconds, just by connecting your wallet.
+                                <p>
+                                    <div class="buttons-area">
+                                        <a href="#" class="boxed-btn">Trade Now Learn</a>
+                                        <a href="#" class="inline-btn">Learn</a>
+                                    </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-7 col-lg-6 col-md-6 order-1 order-md-2 mb-4 mb-md-0 aos-init aos-animate" data-aos="fade-up" data-aos-duration="1500" data-aos-duration>
+                        <div class="echosystem-right-area">
+                            <img src="assets/img/bitme-bitcoin-currency-img.png" alt="bitme-bitcoin-currency-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Ecosystem area end-->
+
+        <!--Passive income crypto area start-->
+        <section class="passive-income-crypto-area">
+            <div class="container">
+                <div class="row justify-content-center aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000" data-aos-duration>
+                    <div class="col-xl-5 col-lg-7 col-md-8 text-center">
+                        <div class="section-title">
+                            <span class="mb-3">Join the bitme echosystem</span>
+                            <h2 class="mb-4">Earn passive income with crypto.</h2>
+                            <p>PancakeSwap makes it easy to make your crypto work for you.
+                                <p>
+                                    <div class="buttons-area justify-content-center">
+                                        <a href="#" class="boxed-btn">Explore</a>
+                                        <a href="#" class="inline-btn">Learn</a>
+                                    </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <div class="col-lg-12 mt-2">
+                        <img src="assets/img/Line-border.png" alt="bitme-line-border">
+                        <div class="top-farms-area">
+                            <h3 class="text-center title">Our Top Farms</h3>
+                            <div class="top-farms-services-boxs">
+                                <div class="single-tf-services-item_gradian aos-init aos-animate" data-aos="fade-up" data-aos-duration="800" data-aos-duration>
+                                    <div class="single-tf-services-item">
+                                        <h4>GMI-BNB LP</h4>
+                                        <h3>195.254%</h3>
+                                        <p>APR</p>
                                     </div>
                                 </div>
-                                <div class="datainfo">
-                                    <div class="datainfo_header row align-items-end">
-                                        <div class="col-lg-5">
-                                            <div class="datainfo_header_left">
-                                                <div>
-                                                    <div class="input-control">
-                                                        <label for="#" class="input-control-label">Sort By</label>
-                                                        <select name="" id="">
-                                                            <option value="1">Hot</option>
-                                                            <option value="2">Hot</option>
-                                                            <option value="3">Cool</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                                <div>
-                                                    <div class="input-control">
-                                                        <label for="#" class="input-control-label">Search</label>
-                                                        <label for="query" class="input-control-icon"><i class="fal fa-search"></i></label>
-                                                        <input type="search" name="query" id="query" placeholder="Search" class="input-control-input">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-7 text-end">
-                                            <div class="datainfo_header_right">
-                                                <div class="checkbox">
-                                                    <input type="checkbox" name="checkbox" id="stack2">
-                                                    <label for="stack2">
-                                                        <span class="checkbox_icon "></span>
-                                                        <span class="checkbox_title ">Stack Only</span>
-                                                    </label>
-                                                </div>
-                                                <div class="custom_border ">
-                                                    <ul class="related ">
-                                                        <li class="d-inline-block "><a href="# " class="active ">Live</a></li>
-                                                        <li class="d-inline-block "><a href="# ">Finished</a></li>
-                                                    </ul>
-                                                </div>
-                                                <div class="view_option ">
-                                                    <ul>
-                                                        <li class="d-inline-block custom_border active ">
-                                                            <a href="# ">
-                                                                <svg width="22 " height="22 " viewBox="0 0 22 22 " fill="none " xmlns="http://www.w3.org/2000/svg ">
-                                                                    <path d="M15.3309 0V5.82595H22V0H15.3309ZM15.3309 6.97562V13.9512H22V6.97562H15.3309ZM15.3309 15.0244V22H22V15.0244H15.3309ZM6.74564 22V15.0244H0V22H6.74564ZM6.74564 13.9512V6.97562H0V13.9512H6.74564ZM6.745645.82595V0H0V5.82595H6.74564ZM7.8188 0V5.82595H14.1812V0H7.8188ZM7.8188 6.97562V13.9512H14.1812V6.97562H7.8188ZM7.8188 15.0244V22H14.1812V15.0244H7.8188Z " fill="white "/>
-                                                                </svg>
-                                                            </a>
-                                                        </li>
-                                                        <li class="d-inline-block custom_border ">
-                                                            <a href="# ">
-                                                                <svg width="22 " height="22 " viewBox="0 0 22 22 " fill="none " xmlns="http://www.w3.org/2000/svg ">
-                                                                    <path d="M6.73772 22V15.0398H0.0292969V22H6.73772ZM6.73772 13.8658V6.90564H0.0292969V13.8658H6.73772ZM6.73772 5.81539V0.0292664H0.0292969V5.81539H6.73772ZM7.82786 0.0292664V5.81539H22V0.0292664H7.82786ZM7.827866.9057V13.8659H22V6.9057H7.82786ZM7.82786 15.0398V22H22V15.0398H7.82786Z " fill="white "/>
-                                                                </svg>
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
+                                <div class="single-tf-services-item_gradian aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000" data-aos-duration>
+                                    <div class="single-tf-services-item">
+                                        <h4>GMI-BNB LP</h4>
+                                        <h3>195.254%</h3>
+                                        <p>APR</p>
                                     </div>
-                                    <div class="datainfo-table ">
-                                        <div class="datainfo-table-responsive">
-                                            <table>
-                                                <tbody>
-                                                    <tr class="custom_border ">
-                                                        <td>
-                                                            <div class="d-flex align-items-center ">
-                                                                <div class="user_img ">
-                                                                    <div class="user_img_inner">
-                                                                        <img src="assets/img/data-info/1.png " alt=" ">
-                                                                    </div>
-                                                                </div>
-                                                                <div class="user_content ">
-                                                                    <p>Cake - BNB</p>
-                                                                    <span>Stake, Earn - And More</span>
-                                                                </div>
-                                                            </div>
-                                                        </td>
-                                                        <td>
-                                                            <span>Cake Staked</span>
-                                                            <p>0.0 <span class="text-uppercase d-inline-block">usd</span></p>
-                                                        </td>
-                                                        <td>
-                                                            <span>Flexible APY</span>
-                                                            <p>5.94%</p>
-                                                        </td>
-                                                        <td>
-                                                            <span>Locked APY</span>
-                                                            <p>Up to 127.31%</p>
-                                                        </td>
-                                                        <td>
-                                                            <span>Total Staked</span>
-                                                            <p>167,165,214 Cake</p>
-                                                        </td>
-                                                        <td>
-                                                            <span>Multiplier</span>
-                                                            <p>167,165,214 Cake</p>
-                                                        </td>
-                                                        <td>
-                                                            <a href="#">Details <i class="fa fa-caret-down"></i></a>
-                                                        </td>
-                                                    </tr>
-                                                    <tr class="custom_border ">
-                                                        <td>
-                                                            <div class="d-flex align-items-center ">
-                                                                <div class="user_img ">
-                                                                    <div class="user_img_inner">
-                                                                        <img src="assets/img/data-info/1.png " alt=" ">
-                                                                    </div>
-                                                                </div>
-                                                                <div class="user_content ">
-                                                                    <p>Cake - BNB</p>
-                                                                    <span>Stake, Earn - And More</span>
-                                                                </div>
-                                                            </div>
-                                                        </td>
-                                                        <td>
-                                                            <span>Cake Staked</span>
-                                                            <p>0.0 <span class="text-uppercase d-inline-block">usd</span></p>
-                                                        </td>
-                                                        <td>
-                                                            <span>Flexible APY</span>
-                                                            <p>5.94%</p>
-                                                        </td>
-                                                        <td>
-                                                            <span>Locked APY</span>
-                                                            <p>Up to 127.31%</p>
-                                                        </td>
-                                                        <td>
-                                                            <span>Total Staked</span>
-                                                            <p>167,165,214 Cake</p>
-                                                        </td>
-                                                        <td>
-                                                            <span>Multiplier</span>
-                                                            <p>167,165,214 Cake</p>
-                                                        </td>
-                                                        <td>
-                                                            <a href="#">Details <i class="fa fa-caret-down"></i></a>
-                                                        </td>
-                                                    </tr>
-                                                    <tr class="custom_border ">
-                                                        <td>
-                                                            <div class="d-flex align-items-center ">
-                                                                <div class="user_img ">
-                                                                    <div class="user_img_inner">
-                                                                        <img src="assets/img/data-info/1.png " alt=" ">
-                                                                    </div>
-                                                                </div>
-                                                                <div class="user_content ">
-                                                                    <p>Cake - BNB</p>
-                                                                    <span>Stake, Earn - And More</span>
-                                                                </div>
-                                                            </div>
-                                                        </td>
-                                                        <td>
-                                                            <span>Cake Staked</span>
-                                                            <p>0.0 <span class="text-uppercase d-inline-block">usd</span></p>
-                                                        </td>
-                                                        <td>
-                                                            <span>Flexible APY</span>
-                                                            <p>5.94%</p>
-                                                        </td>
-                                                        <td>
-                                                            <span>Locked APY</span>
-                                                            <p>Up to 127.31%</p>
-                                                        </td>
-                                                        <td>
-                                                            <span>Total Staked</span>
-                                                            <p>167,165,214 Cake</p>
-                                                        </td>
-                                                        <td>
-                                                            <span>Multiplier</span>
-                                                            <p>167,165,214 Cake</p>
-                                                        </td>
-                                                        <td>
-                                                            <a href="#">Details <i class="fa fa-caret-down"></i></a>
-                                                        </td>
-                                                    </tr>
-                                                    <tr class="custom_border ">
-                                                        <td>
-                                                            <div class="d-flex align-items-center ">
-                                                                <div class="user_img ">
-                                                                    <div class="user_img_inner">
-                                                                        <img src="assets/img/data-info/1.png " alt=" ">
-                                                                    </div>
-                                                                </div>
-                                                                <div class="user_content ">
-                                                                    <p>Cake - BNB</p>
-                                                                    <span>Stake, Earn - And More</span>
-                                                                </div>
-                                                            </div>
-                                                        </td>
-                                                        <td>
-                                                            <span>Cake Staked</span>
-                                                            <p>0.0 <span class="text-uppercase d-inline-block">usd</span></p>
-                                                        </td>
-                                                        <td>
-                                                            <span>Flexible APY</span>
-                                                            <p>5.94%</p>
-                                                        </td>
-                                                        <td>
-                                                            <span>Locked APY</span>
-                                                            <p>Up to 127.31%</p>
-                                                        </td>
-                                                        <td>
-                                                            <span>Total Staked</span>
-                                                            <p>167,165,214 Cake</p>
-                                                        </td>
-                                                        <td>
-                                                            <span>Multiplier</span>
-                                                            <p>167,165,214 Cake</p>
-                                                        </td>
-                                                        <td>
-                                                            <a href="#">Details <i class="fa fa-caret-down"></i></a>
-                                                        </td>
-                                                    </tr>
-                                                    <tr class="custom_border ">
-                                                        <td>
-                                                            <div class="d-flex align-items-center ">
-                                                                <div class="user_img ">
-                                                                    <div class="user_img_inner">
-                                                                        <img src="assets/img/data-info/1.png " alt=" ">
-                                                                    </div>
-                                                                </div>
-                                                                <div class="user_content ">
-                                                                    <p>Cake - BNB</p>
-                                                                    <span>Stake, Earn - And More</span>
-                                                                </div>
-                                                            </div>
-                                                        </td>
-                                                        <td>
-                                                            <span>Cake Staked</span>
-                                                            <p>0.0 <span class="text-uppercase d-inline-block">usd</span></p>
-                                                        </td>
-                                                        <td>
-                                                            <span>Flexible APY</span>
-                                                            <p>5.94%</p>
-                                                        </td>
-                                                        <td>
-                                                            <span>Locked APY</span>
-                                                            <p>Up to 127.31%</p>
-                                                        </td>
-                                                        <td>
-                                                            <span>Total Staked</span>
-                                                            <p>167,165,214 Cake</p>
-                                                        </td>
-                                                        <td>
-                                                            <span>Multiplier</span>
-                                                            <p>167,165,214 Cake</p>
-                                                        </td>
-                                                        <td>
-                                                            <a href="#">Details <i class="fa fa-caret-down"></i></a>
-                                                        </td>
-                                                    </tr>
-                                                    <tr class="custom_border ">
-                                                        <td>
-                                                            <div class="d-flex align-items-center ">
-                                                                <div class="user_img ">
-                                                                    <div class="user_img_inner">
-                                                                        <img src="assets/img/data-info/1.png " alt=" ">
-                                                                    </div>
-                                                                </div>
-                                                                <div class="user_content ">
-                                                                    <p>Cake - BNB</p>
-                                                                    <span>Stake, Earn - And More</span>
-                                                                </div>
-                                                            </div>
-                                                        </td>
-                                                        <td>
-                                                            <span>Cake Staked</span>
-                                                            <p>0.0 <span class="text-uppercase d-inline-block">usd</span></p>
-                                                        </td>
-                                                        <td>
-                                                            <span>Flexible APY</span>
-                                                            <p>5.94%</p>
-                                                        </td>
-                                                        <td>
-                                                            <span>Locked APY</span>
-                                                            <p>Up to 127.31%</p>
-                                                        </td>
-                                                        <td>
-                                                            <span>Total Staked</span>
-                                                            <p>167,165,214 Cake</p>
-                                                        </td>
-                                                        <td>
-                                                            <span>Multiplier</span>
-                                                            <p>167,165,214 Cake</p>
-                                                        </td>
-                                                        <td>
-                                                            <a href="#">Details <i class="fa fa-caret-down"></i></a>
-                                                        </td>
-                                                    </tr>
-                                                    <tr class="custom_border ">
-                                                        <td>
-                                                            <div class="d-flex align-items-center ">
-                                                                <div class="user_img ">
-                                                                    <div class="user_img_inner">
-                                                                        <img src="assets/img/data-info/1.png " alt=" ">
-                                                                    </div>
-                                                                </div>
-                                                                <div class="user_content ">
-                                                                    <p>Cake - BNB</p>
-                                                                    <span>Stake, Earn - And More</span>
-                                                                </div>
-                                                            </div>
-                                                        </td>
-                                                        <td>
-                                                            <span>Cake Staked</span>
-                                                            <p>0.0 <span class="text-uppercase d-inline-block">usd</span></p>
-                                                        </td>
-                                                        <td>
-                                                            <span>Flexible APY</span>
-                                                            <p>5.94%</p>
-                                                        </td>
-                                                        <td>
-                                                            <span>Locked APY</span>
-                                                            <p>Up to 127.31%</p>
-                                                        </td>
-                                                        <td>
-                                                            <span>Total Staked</span>
-                                                            <p>167,165,214 Cake</p>
-                                                        </td>
-                                                        <td>
-                                                            <span>Multiplier</span>
-                                                            <p>167,165,214 Cake</p>
-                                                        </td>
-                                                        <td>
-                                                            <a href="#">Details <i class="fa fa-caret-down"></i></a>
-                                                        </td>
-                                                    </tr>
-                                                    <tr class="custom_border ">
-                                                        <td>
-                                                            <div class="d-flex align-items-center ">
-                                                                <div class="user_img ">
-                                                                    <div class="user_img_inner">
-                                                                        <img src="assets/img/data-info/1.png " alt=" ">
-                                                                    </div>
-                                                                </div>
-                                                                <div class="user_content ">
-                                                                    <p>Cake - BNB</p>
-                                                                    <span>Stake, Earn - And More</span>
-                                                                </div>
-                                                            </div>
-                                                        </td>
-                                                        <td>
-                                                            <span>Cake Staked</span>
-                                                            <p>0.0 <span class="text-uppercase d-inline-block">usd</span></p>
-                                                        </td>
-                                                        <td>
-                                                            <span>Flexible APY</span>
-                                                            <p>5.94%</p>
-                                                        </td>
-                                                        <td>
-                                                            <span>Locked APY</span>
-                                                            <p>Up to 127.31%</p>
-                                                        </td>
-                                                        <td>
-                                                            <span>Total Staked</span>
-                                                            <p>167,165,214 Cake</p>
-                                                        </td>
-                                                        <td>
-                                                            <span>Multiplier</span>
-                                                            <p>167,165,214 Cake</p>
-                                                        </td>
-                                                        <td>
-                                                            <a href="#">Details <i class="fa fa-caret-down"></i></a>
-                                                        </td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                        <nav class="pagination ">
-                                            <ul>
-                                                <li><a href="# "><i class="fal fa-arrow-left "></i></a></li>
-                                                <li><span>Page 1 of 1</span></li>
-                                                <li><a href="# "><i class="fal fa-arrow-right "></i></a></li>
-                                            </ul>
-                                        </nav>
+                                </div>
+                                <div class="single-tf-services-item_gradian aos-init aos-animate" data-aos="fade-up" data-aos-duration="1200" data-aos-duration>
+                                    <div class="single-tf-services-item">
+                                        <h4>GMI-BNB LP</h4>
+                                        <h3>195.254%</h3>
+                                        <p>APR</p>
+                                    </div>
+                                </div>
+                                <div class="single-tf-services-item_gradian aos-init aos-animate" data-aos="fade-up" data-aos-duration="1400" data-aos-duration>
+                                    <div class="single-tf-services-item">
+                                        <h4>GMI-BNB LP</h4>
+                                        <h3>195.254%</h3>
+                                        <p>APR</p>
+                                    </div>
+                                </div>
+                                <div class="single-tf-services-item_gradian aos-init aos-animate" data-aos="fade-up" data-aos-duration="1600" data-aos-duration>
+                                    <div class="single-tf-services-item">
+                                        <h4>GMI-BNB LP</h4>
+                                        <h3>195.254%</h3>
+                                        <p>APR</p>
+                                    </div>
+                                </div>
+                                <div class="single-tf-services-item_gradian aos-init aos-animate" data-aos="fade-up" data-aos-duration="1800" data-aos-duration>
+                                    <div class="single-tf-services-item">
+                                        <h4>GMI-BNB LP</h4>
+                                        <h3>195.254%</h3>
+                                        <p>APR</p>
+                                    </div>
+                                </div>
+                                <div class="single-tf-services-item_gradian aos-init aos-animate" data-aos="fade-up" data-aos-duration="2000" data-aos-duration>
+                                    <div class="single-tf-services-item">
+                                        <h4>GMI-BNB LP</h4>
+                                        <h3>195.254%</h3>
+                                        <p>APR</p>
+                                    </div>
+                                </div>
+                                <div class="single-tf-services-item_gradian aos-init aos-animate" data-aos="fade-up" data-aos-duration="2200" data-aos-duration>
+                                    <div class="single-tf-services-item">
+                                        <h4>GMI-BNB LP</h4>
+                                        <h3>195.254%</h3>
+                                        <p>APR</p>
+                                    </div>
+                                </div>
+                                <div class="single-tf-services-item_gradian aos-init aos-animate" data-aos="fade-up" data-aos-duration="2400" data-aos-duration>
+                                    <div class="single-tf-services-item">
+                                        <h4>GMI-BNB LP</h4>
+                                        <h3>195.254%</h3>
+                                        <p>APR</p>
+                                    </div>
+                                </div>
+                                <div class="single-tf-services-item_gradian aos-init aos-animate" data-aos="fade-up" data-aos-duration="2600" data-aos-duration>
+                                    <div class="single-tf-services-item">
+                                        <h4>GMI-BNB LP</h4>
+                                        <h3>195.254%</h3>
+                                        <p>APR</p>
                                     </div>
                                 </div>
                             </div>
@@ -904,74 +295,122 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
+        <!--Passive income crypto area end-->
+
+        <!--World Round area start-->
+        <section class="bitme-worldround-area">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-md-6 aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000" data-aos-duration>
+                        <div class="worldround-left-area">
+                            <img src="assets/img/bitme-world-round-img.png" alt="bitme-world-round-img">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 aos-init aos-animate" data-aos="fade-up" data-aos-duration="1300" data-aos-duration>
+                        <div class="bitme-worldround-content-area">
+                            <h4 class="mb-3">Join the bitme echosystem</h4>
+                            <h2 class="mb-4"><span>Bitme makes</span> our world <br> go round.</h2>
+                            <p>Bitme token is at the heart of the PancakeSwap ecosystem. Buy it, win it, farm it, spend it, stake it... heck, you can even vote with it!</p>
+                            <div class="buttons-area">
+                                <a href="#" class="boxed-btn">Buy Bitme</a>
+                                <a href="#" class="inline-btn">Learn</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row service-counts-wrapper">
+                    <div class="col-lg-3 col-md-6 col-sm-6 aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000" data-aos-duration>
+                        <div class="single-service-count">
+                            <h3>299,237,678</h3>
+                            <p>Total supply</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 aos-init aos-animate" data-aos="fade-up" data-aos-duration="1200" data-aos-duration>
+                        <div class="single-service-count">
+                            <h3>446,886,058</h3>
+                            <p>Burned to date</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 aos-init aos-animate" data-aos="fade-up" data-aos-duration="1400" data-aos-duration>
+                        <div class="single-service-count">
+                            <h3>$1.7 billion</h3>
+                            <p>Market cap</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 aos-init aos-animate" data-aos="fade-up" data-aos-duration="1600" data-aos-duration>
+                        <div class="single-service-count">
+                            <h3>14.25/block</h3>
+                            <p>Current emissions</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--World Round area end-->
     </main>
 
 
-
-
-
-
     <!--Footer Start-->
-    <footer class="footer-area ">
-        <div class="container ">
-            <div class="row footer-top ">
-                <div class="col-md-12 col-lg-3 text-md-center text-lg-start mb-4 mb-lg-0 ">
-                    <a href="# " class="site-logo ">
-                        <img src="assets/img/bitme-site-logo.png " alt="site-logo ">
+    <footer class="footer-area home-footer">
+        <div class="container">
+            <div class="row footer-top">
+                <div class="col-md-12 col-lg-3 text-md-center mb-4 mb-lg-0">
+                    <a href="#" class="site-logo">
+                        <img src="assets/img/bitme-site-logo.png" alt="site-logo">
                     </a>
                 </div>
-                <div class="col-sm-6 col-md-3 col-lg-2 mt-4 mt-md-0 ">
-                    <div class="footer-widget ">
+                <div class="col-sm-6 col-md-3 col-lg-2 mt-4 mt-md-0">
+                    <div class="footer-widget">
                         <h4>About</h4>
                         <ul>
-                            <li><a href="# ">Contact</a></li>
-                            <li><a href="# ">Brand</a></li>
-                            <li><a href="# ">Blog</a></li>
-                            <li><a href="# ">Community</a></li>
-                            <li><a href="# ">Online Store</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Brand</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Community</a></li>
+                            <li><a href="#">Online Store</a></li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-3 col-lg-2 mt-4 mt-md-0 ">
-                    <div class="footer-widget ">
+                <div class="col-sm-6 col-md-3 col-lg-2 mt-4 mt-md-0">
+                    <div class="footer-widget">
                         <h4>HELP</h4>
                         <ul>
-                            <li><a href="# ">Customer Support</a></li>
-                            <li><a href="# ">Trobleshooting</a></li>
-                            <li><a href="# ">Guides</a></li>
+                            <li><a href="#">Customer Support</a></li>
+                            <li><a href="#">Trobleshooting</a></li>
+                            <li><a href="#">Guides</a></li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-3 col-lg-2 mt-4 mt-md-0 ">
-                    <div class="footer-widget ">
+                <div class="col-sm-6 col-md-3 col-lg-2 mt-4 mt-md-0">
+                    <div class="footer-widget">
                         <h4>DEVELOPERS</h4>
                         <ul>
-                            <li><a href="# ">Github</a></li>
-                            <li><a href="# ">Documentation</a></li>
-                            <li><a href="# ">Bug Bounty</a></li>
-                            <li><a href="# ">Audit</a></li>
-                            <li><a href="# ">Careers</a></li>
+                            <li><a href="#">Github</a></li>
+                            <li><a href="#">Documentation</a></li>
+                            <li><a href="#">Bug Bounty</a></li>
+                            <li><a href="#">Audit</a></li>
+                            <li><a href="#">Careers</a></li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-3 col-lg-2 mt-4 mt-md-0 ">
-                    <div class="footer-widget ">
+                <div class="col-sm-6 col-md-3 col-lg-2 mt-4 mt-md-0">
+                    <div class="footer-widget">
                         <h4>social media</h4>
                         <ul>
-                            <li><a href="# ">Facebook</a></li>
-                            <li><a href="# ">Twitter</a></li>
-                            <li><a href="# ">Instagram</a></li>
-                            <li><a href="# ">Telegram</a></li>
-                            <li><a href="# ">Linkedin</a></li>
+                            <li><a href="#">Facebook</a></li>
+                            <li><a href="#">Twitter</a></li>
+                            <li><a href="#">Instagram</a></li>
+                            <li><a href="#">Telegram</a></li>
+                            <li><a href="#">Linkedin</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
 
-            <div class="row footer-bottom justify-content-center align-items-center ">
-                <img src="assets/img/Line-border.png " alt="bitme-line-border ">
-                <div class="col-md-6 col-lg-6 mt-4 mt-md-0 py-4 text-center ">
+            <div class="row footer-bottom justify-content-center align-items-center">
+                <img src="assets/img/Line-border.png" alt="bitme-line-border">
+                <div class="col-md-6 col-lg-6 mt-4 mt-md-0 py-4 text-center">
                     <p>Copyright &copy; Bitme
                         <script>
                             document.write(new Date().getFullYear())
@@ -982,11 +421,21 @@
     </footer>
     <!--Footer End-->
 
+
     <script src="assets/js/jquery.min.js "></script>
     <script src="assets/js/bootstrap.min.js "></script>
     <script src="assets/js/jquery.nice-select.min.js "></script>
     <script src="assets/js/popper.min.js "></script>
+    <script src="assets/js/aos.min.js"></script>
     <script src="assets/js/main.js "></script>
+
+    <script>
+        $('#navbar_top .main-menu a').on('click', function() {
+            $('#navbar_top .main-menu').find('li.active').removeClass('active');
+            $(this).parent('li').addClass('active');
+        });
+        AOS.init();
+    </script>
 </body>
 
 </html>

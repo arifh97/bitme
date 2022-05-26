@@ -16,6 +16,24 @@ body {
     background-color: $darkbg;
 }
 
+:root {
+    /*Font Size var*/
+    --font-size-one: 61px;
+    --font-size-two: 39px;
+    --font-size-three: 31px;
+    --font-size-four: 14px;
+    --font-size-five: 16px;
+    --font-size-six: 20px;
+    /*color code var*/
+    --color-white: #ffffff;
+    --color-one: #ecf1f5;
+    --color-two: #00cbff;
+    --color-three: #ecf1f6;
+    --color-four: #ffb411;
+    --color-five: #091b31;
+    --color-six: #0c233e;
+}
+
 html,
 body {
     height: 100%;
@@ -144,28 +162,6 @@ input[type=number] {
     }
 }
 
-#back_to_top {
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
-    text-align: center;
-    position: fixed;
-    font-size: var(--font-size-nine);
-    color: #1c1c1c;
-    bottom: 30px;
-    right: 30px;
-    opacity: 0;
-    visibility: hidden;
-    z-index: 1000;
-    border-radius: 50%;
-}
-
-#back_to_top.show {
-    opacity: 1;
-    visibility: visible;
-}
-
 #preloader {
     position: fixed;
     top: 0;
@@ -175,6 +171,10 @@ input[type=number] {
     background-color: #f7f7f7;
     z-index: 99999999999999;
     height: 100%;
+    width: 100%;
+    @include flex;
+    justify-content: center;
+    display: none;
 }
 
 .section_padding_bottom {
@@ -312,5 +312,24 @@ input[type=number] {
         &::placeholder {
             color: $text-color;
         }
+    }
+}
+
+.apexcharts-tooltip.apexcharts-theme-light {
+    color: #000000;
+}
+
+span.apexcharts-legend-marker {
+    display: none;
+}
+
+.section-title {
+    & span {
+        display: block;
+        color: var(--color-four);
+        margin-bottom: 20px;
+    }
+    & h2 {
+        font-weight: 400;
     }
 }

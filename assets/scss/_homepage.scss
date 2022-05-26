@@ -1,0 +1,519 @@
+h1 {
+    font-size: var(--font-size-one);
+    color: var(--color-one);
+}
+
+h2 {
+    font-size: var(--font-size-two);
+}
+
+h2 span {
+    color: var(--color-two);
+}
+
+h3 {
+    font-size: var(--font-size-three);
+}
+
+h4 {
+    font-size: var(--font-size-four);
+    color: var(--color-four);
+}
+
+
+/**
+ * # \Hero-area
+ * ---------------------------------------------------------------------------------------------------- */
+
+.homepge p {
+    color: rgba($color: $white, $alpha: .70);
+    line-height: 150%;
+}
+
+.hero-area {
+    position: relative;
+    background: rgb(12, 35, 62);
+    background: linear-gradient( 90deg, rgba(12, 35, 62, 1) 0%, rgba(12, 36, 64, 1) 7%, rgba(12, 39, 69, 1) 30%, rgba(14, 51, 88, 1) 40%, rgba(16, 72, 124, 1) 66%, rgba(15, 54, 94, 1) 85%, rgba(13, 50, 89, 1) 100%);
+    padding-top: 175px;
+    padding-bottom: 80px;
+}
+
+.hero-content-area-wrapper {
+    position: relative;
+    z-index: 9;
+}
+
+.hero-area p {
+    font-size: var(--font-size-six);
+    line-height: 150%;
+    margin-top: 20px;
+}
+
+.buttons-area {
+    margin-top: 40px;
+    display: flex;
+    gap: 17px;
+    align-items: center;
+}
+
+.counter-area {
+    margin-top: 73px;
+}
+
+.count-number {
+    color: var(--color-two);
+}
+
+.counter-area p {
+    font-size: var(--font-size-five);
+    margin-top: 10px;
+}
+
+.hero-right-img {
+    text-align: right;
+    position: relative;
+}
+
+.hero-right-img img {
+    max-width: 600px;
+    position: relative;
+    z-index: 9;
+    @include lg {
+        max-width: 100%;
+    }
+    @include md {
+        max-width: 100%;
+    }
+}
+
+.hero-right-img .hero-star-1 {
+    position: absolute;
+    left: 130px;
+    max-width: 102px;
+    animation: jumpInfinite 3s infinite;
+    -webkit-animation: jumpInfinite 3s infinite;
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+}
+
+.hero-right-img .hero-star-2 {
+    position: absolute;
+    left: auto;
+    right: 90px;
+    bottom: 80px;
+    max-width: 52px;
+    animation: star-2 4s infinite;
+    -webkit-animation: star-2 4s infinite;
+    transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+}
+
+@keyframes jumpInfinite {
+    0% {
+        left: 130px;
+    }
+    50% {
+        left: 150px;
+    }
+    100% {
+        left: 130px;
+    }
+}
+
+@keyframes star-2 {
+    0% {
+        right: 90px;
+    }
+    50% {
+        right: 60px;
+    }
+    100% {
+        right: 90px;
+    }
+}
+
+
+/**
+ * # Service Style Start
+ * 
+ * ------------------------------------------------------------------------------- */
+
+.services-area {
+    position: relative;
+    z-index: 3;
+    padding-top: 84px;
+    padding-bottom: 160px;
+}
+
+img.s-bg {
+    position: absolute;
+    width: 100%;
+    height: 122%;
+    left: 0;
+    bottom: -5px;
+    z-index: -1;
+}
+
+.single-service-area {
+    background: linear-gradient(180deg, #193352 0%, rgba(25, 51, 82, 0) 100%);
+    padding: 35px;
+    border-radius: 20px;
+}
+
+.single-service-area h3 {
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.single-service-area p {
+    margin-bottom: 35px;
+}
+
+.single-service-area img {
+    max-width: 55px;
+    margin-top: 17px;
+}
+
+
+/**
+ * # Ecosystem Area Style Start
+ * 
+ * ------------------------------------------------------------------------------- */
+
+.ecosystem-area {
+    background-color: var(--color-five);
+    padding-top: 70px;
+    padding-bottom: 70px;
+    position: relative;
+}
+
+.ecosystem-area:after {
+    position: absolute;
+    content: "";
+    right: 20%;
+    bottom: -61px;
+    width: 122px;
+    height: 122px;
+    background-image: url(../img/bitme-circle.png);
+}
+
+.echosystem-right-area img {
+    max-width: 572px;
+    @include lg {
+        max-width: 100%;
+    }
+    @include mmd {
+        max-width: 100%;
+    }
+}
+
+.echosystem-right-area {
+    text-align: right;
+}
+
+.ecosystem-content-area h2 {
+    font-weight: 400;
+}
+
+.ecosystem-content-area h2 span {
+    color: #00CBFF;
+}
+
+.ecosystem-content-area h4 {
+    font-size: var(--font-size-four);
+    font-weight: 400;
+    line-height: 120%;
+    color: #FFB411;
+}
+
+
+/**
+ * # Passive Income Crypto Style Start
+ * 
+ * ------------------------------------------------------------------------------- */
+
+.passive-income-crypto-area {
+    background-color: var(--color-six);
+    padding-top: 110px;
+    padding-bottom: 110px;
+}
+
+.top-farms-area .title {
+    padding-top: 55px;
+    padding-bottom: 70px;
+}
+
+.top-farms-services-boxs {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(205px, 1fr));
+    gap: 30px;
+}
+
+.single-tf-services-item {
+    border-radius: 20px;
+    background: linear-gradient(180deg, #193352 0%, rgba(25, 51, 82, 0) 100%);
+    padding: 17px;
+}
+
+.single-tf-services-item h3 {
+    font-size: 25px;
+}
+
+.single-tf-services-item p {
+    color: $primary;
+}
+
+.single-tf-services-item {
+    background: linear-gradient(180deg, #193352 0%, #0c233e 100%);
+}
+
+.single-tf-services-item_gradian {
+    position: relative;
+    z-index: 1;
+}
+
+.single-tf-services-item_gradian::after {
+    content: "";
+    width: 101%;
+    height: 102%;
+    background: linear-gradient(92.9deg, rgba(29, 133, 255, 0) 0.35%, #1DAEFF 100%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+    border-radius: 20px;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+}
+
+
+/**
+ * # Bitme Worldround Style Start
+ * 
+ * ------------------------------------------------------------------------------- */
+
+.bitme-worldround-area {
+    background-color: var(--color-five);
+    padding-top: 50px;
+}
+
+.bitme-worldround-content-area {
+    padding-top: 160px;
+    padding-bottom: 140px;
+}
+
+.worldround-left-area img {
+    max-width: 580px;
+    @include lg {
+        max-width: 100%;
+    }
+    @include mmd {
+        max-width: 100%;
+    }
+}
+
+.single-service-count {
+    background: linear-gradient(180deg, #193352 0%, rgba(25, 51, 82, 0) 100%);
+    border-radius: 20px;
+    padding: 25px 35px;
+    padding-bottom: 80px;
+}
+
+.single-service-count h3 {
+    font-size: var(--font-size-three);
+    color: var(--color-two);
+}
+
+.single-service-count p {
+    font-size: var(--font-size-four);
+}
+
+.row.service-counts-wrapper {
+    margin-bottom: -123px;
+}
+
+.home-footer {
+    padding-top: 166px !important;
+}
+
+@media screen and (min-width: 320px) and (max-width: 1170px) {
+    h1 {
+        font-size: calc(35px + 26 * ((100vw - 320px) / 1170));
+    }
+    h2 {
+        font-size: calc(26px + 11 * ((100vw - 320px) / 1170));
+    }
+    h3 {
+        font-size: calc(22px + 9 * ((100vw - 320px) / 1170)) !important;
+    }
+    p {
+        font-size: 15px;
+    }
+    .single-service-area {
+        padding: 25px;
+    }
+    .services-area {
+        padding-top: calc(60px + 20 * ((100vw - 320px) / 1170));
+        padding-bottom: calc(60px + 100 * ((100vw - 320px) / 1170));
+    }
+    .bitme-worldround-content-area {
+        padding-top: 10px;
+        padding-bottom: calc(60px + 80 * ((100vw - 320px) / 1170));
+    }
+    .single-service-area img {
+        max-width: 40px;
+    }
+    .hero-right-img .hero-star-2 {
+        bottom: 30px;
+    }
+    @keyframes star-2 {
+        0% {
+            right: 0px;
+        }
+        50% {
+            right: 30px;
+        }
+        100% {
+            right: 0px;
+        }
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .hero-area p {
+        line-height: 1.5;
+    }
+    @keyframes jumpInfinite {
+        0% {
+            left: 0px;
+        }
+        50% {
+            left: 30px;
+        }
+        100% {
+            left: 0px;
+        }
+    }
+}
+
+
+/* max-width 992px, large screens */
+
+@media only screen and (max-width: 767px) {
+    .hero-right-img img {
+        max-width: calc(350px + 250 * ((100vw - 320px) / 768));
+    }
+    .hero-right-img {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    .ecosystem-area {
+        padding-top: 50px;
+    }
+    .bitme-worldround-area {
+        padding-top: 10px;
+    }
+    .hero-area {
+        padding-top: 125px;
+        padding-bottom: 40px;
+    }
+    .hero-area p {
+        font-size: 15px;
+    }
+    .hero-right-img .hero-star-1 {
+        top: 0px
+    }
+    @keyframes jumpInfinite {
+        0% {
+            left: 80px;
+        }
+        50% {
+            left: 110px;
+        }
+        100% {
+            left: 80px;
+        }
+    }
+    @keyframes star-2 {
+        0% {
+            right: 60px;
+        }
+        50% {
+            right: 30px;
+        }
+        100% {
+            right: 60px;
+        }
+    }
+}
+
+
+/* min-width 768px, medium screens */
+
+@media only screen and (max-width: 576px) {
+    img.s-bg {
+        display: none;
+    }
+    .services-area {
+        background: #0C233E;
+    }
+    .counter-area {
+        margin-top: 50px;
+        justify-content: start !important;
+    }
+    .counter-area .text-center {
+        text-align: left !important;
+    }
+    .top-farms-area .title {
+        padding-bottom: 40px;
+    }
+    @keyframes jumpInfinite {
+        0% {
+            left: 10px;
+        }
+        50% {
+            left: -10px;
+        }
+        100% {
+            left: 10px;
+        }
+    }
+    @keyframes star-2 {
+        0% {
+            right: 60px;
+        }
+        50% {
+            right: 30px;
+        }
+        100% {
+            right: 60px;
+        }
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .buttons-area {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    .passive-income-crypto-area .buttons-area,
+    .bitme-worldround-content-area .buttons-area {
+        flex-direction: row;
+    }
+    .passive-income-crypto-area {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+    .hero-right-img .hero-star-1 {
+        top: -20px
+    }
+    .hero-right-img .hero-star-2 {
+        bottom: 10px;
+    }
+}
