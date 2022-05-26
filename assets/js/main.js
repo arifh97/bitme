@@ -3,7 +3,7 @@
 
     // PAGE PRELOADER JS
     $(window).on('load', function(e) {
-        // $('body').css('overflow', 'hidden');
+        $('body').css('overflow', 'hidden');
         setTimeout(function() {
             $("#preloader").fadeOut(500);
             $('body').css('overflow', 'visible');
